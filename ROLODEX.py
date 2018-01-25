@@ -77,6 +77,6 @@ def update_rolodex_entry_payMethod(variable, uniqueID):
                     WHERE id = ?''', combo)
     conn.commit()
 
-
+review_all_entries()
 
 
