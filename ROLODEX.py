@@ -1,9 +1,22 @@
 import sqlite3
 
+def return_unique_ID():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM rolodex')
+    IDs = []
+    for item in c:
+        ID = int(item[0])
+        IDs.append(ID)
+    IDs = sorted(IDs, key=int, reverse=True)
+    uniqueID = IDs[0] + 1
+    return str(uniqueID)
+
+
 def input_entry(customerName, customerPhoneNumber, customerAddress, customerPayMethod):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    uniqueID = 4
+    uniqueID = return_unique_ID()
     rolodexEntry = (uniqueID, customerName, customerPhoneNumber, customerAddress, customerPayMethod)
     c.execute('INSERT INTO rolodex VALUES (?,?,?,?,?)', rolodexEntry)
     conn.commit()
@@ -90,5 +103,6 @@ def create_rolodex_table():
     c.execute(create_table)
     conn.commit()
 
-create_rolodex_table()
+return_unique_ID()
+
 
