@@ -17,12 +17,17 @@ e2.grid(row=1, column=1)
 e3.grid(row=2, column=1)
 e4.grid(row=3, column=1)
 
-name = str(e1.get())
-phoneNumber = str(e2.get())
-address = str(e3.get())
-payMethod = str(e4.get())
+
+def input_entry():
+    customerName = e1.get()
+    customerPhoneNumber = e2.get()
+    customerAddress = e3.get()
+    customerPayMethod = e4.get()
+    ROLODEX.input_entry(customerName,customerPhoneNumber,customerAddress,customerPayMethod)
+    ROLODEX.review_all_entries()
+
 
 Button(master, text="Quit", command=master.quit).grid(row=4,column=0)
-Button(master, text="Enter Customer", command=ROLODEX.input_entry(name,phoneNumber,address,payMethod)).grid(row=4,column=1)
+Button(master, text="Enter Customer", command=input_entry).grid(row=4, column=1)
 
 mainloop()

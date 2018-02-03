@@ -1,10 +1,9 @@
 import sqlite3
 
-
 def input_entry(customerName, customerPhoneNumber, customerAddress, customerPayMethod):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    uniqueID = 3
+    uniqueID = 4
     rolodexEntry = (uniqueID, customerName, customerPhoneNumber, customerAddress, customerPayMethod)
     c.execute('INSERT INTO rolodex VALUES (?,?,?,?,?)', rolodexEntry)
     conn.commit()
@@ -77,6 +76,19 @@ def update_rolodex_entry_payMethod(variable, uniqueID):
                     WHERE id = ?''', combo)
     conn.commit()
 
-review_all_entries()
 
+def create_rolodex_table():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    create_table = """CREATE TABLE IF NOT EXISTS rolodex (
+                      id integer PRIMARY KEY,
+                      name text,
+                      phoneNumber text,
+                      address text,
+                      payMethod text)
+                      """
+    c.execute(create_table)
+    conn.commit()
+
+create_rolodex_table()
 
