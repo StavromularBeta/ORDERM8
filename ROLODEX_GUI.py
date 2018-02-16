@@ -23,8 +23,7 @@ def input_entry():
     customerPhoneNumber = e2.get()
     customerAddress = e3.get()
     customerPayMethod = e4.get()
-    ROLODEX.input_entry(customerName,customerPhoneNumber,customerAddress,customerPayMethod)
-    ROLODEX.review_all_entries()
+    ROLODEX.input_entry(customerName, customerPhoneNumber, customerAddress, customerPayMethod)
 
 
 Button(master, text="Quit", command=master.quit).grid(row=4,column=0)
