@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ROLODEX.py" afterPath="$PROJECT_DIR$/ROLODEX.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ROLODEX_DISPLAY.py" afterPath="$PROJECT_DIR$/ROLODEX_DISPLAY.py" />
     </list>
     <ignored path="ORDERM8.iws" />
@@ -26,21 +28,21 @@
       <file leaf-file-name="ROLODEX.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROLODEX.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding>
-                <marker date="1518824068000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
-                <marker date="1518824068000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
-                <marker date="1518824068000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
-                <marker date="1518824068000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
-                <marker date="1518824068000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
-                <marker date="1518824068000" expanded="true" signature="1163:1184" ph="SELECT * FRO... rolodex" />
-                <marker date="1518824068000" expanded="true" signature="1378:1410" ph="DELETE FROM " />
-                <marker date="1518824068000" expanded="true" signature="2103:2183" ph="UPDATE rolod... " />
-                <marker date="1518824068000" expanded="true" signature="2386:2473" ph="UPDATE rolod... " />
-                <marker date="1518824068000" expanded="true" signature="2672:2755" ph="UPDATE rolod... " />
-                <marker date="1518824068000" expanded="true" signature="2956:3041" ph="UPDATE rolod... " />
-                <marker date="1518824068000" expanded="true" signature="3186:3415" ph="CREATE TABLE... IF" />
+                <marker date="1518923275000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
+                <marker date="1518923275000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
+                <marker date="1518923275000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
+                <marker date="1518923275000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
+                <marker date="1518923275000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
+                <marker date="1518923275000" expanded="true" signature="1156:1177" ph="SELECT * FRO... rolodex" />
+                <marker date="1518923275000" expanded="true" signature="1371:1403" ph="DELETE FROM " />
+                <marker date="1518923275000" expanded="true" signature="2096:2176" ph="UPDATE rolod... " />
+                <marker date="1518923275000" expanded="true" signature="2379:2466" ph="UPDATE rolod... " />
+                <marker date="1518923275000" expanded="true" signature="2665:2748" ph="UPDATE rolod... " />
+                <marker date="1518923275000" expanded="true" signature="2949:3034" ph="UPDATE rolod... " />
+                <marker date="1518923275000" expanded="true" signature="3179:3408" ph="CREATE TABLE... IF" />
               </folding>
             </state>
           </provider>
@@ -61,8 +63,8 @@
       <file leaf-file-name="ROLODEX_DISPLAY.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ROLODEX_DISPLAY.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="331">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -127,7 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,7 +150,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +389,7 @@
     <frame x="0" y="23" width="1422" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25724638" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -445,21 +447,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ROLODEX.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <marker date="1518923275000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1156:1177" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1371:1403" ph="DELETE FROM " />
+            <marker date="1518923275000" expanded="true" signature="2096:2176" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2379:2466" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2665:2748" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2949:3034" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="3179:3408" ph="CREATE TABLE... IF" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROLODEX_GUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROLODEX_DISPLAY.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ROLODEX.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding>
-            <marker date="1518824068000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1163:1184" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1378:1410" ph="DELETE FROM " />
-            <marker date="1518824068000" expanded="true" signature="2103:2183" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2386:2473" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2672:2755" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2956:3041" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="3186:3415" ph="CREATE TABLE... IF" />
+            <marker date="1518923275000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1156:1177" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1371:1403" ph="DELETE FROM " />
+            <marker date="1518923275000" expanded="true" signature="2096:2176" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2379:2466" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2665:2748" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2949:3034" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="3179:3408" ph="CREATE TABLE... IF" />
           </folding>
         </state>
       </provider>
@@ -489,18 +532,18 @@
         <state relative-caret-position="1185">
           <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
           <folding>
-            <marker date="1518824068000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1163:1184" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1378:1410" ph="DELETE FROM " />
-            <marker date="1518824068000" expanded="true" signature="2103:2183" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2386:2473" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2672:2755" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2956:3041" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="3186:3415" ph="CREATE TABLE... IF" />
+            <marker date="1518923275000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1156:1177" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1371:1403" ph="DELETE FROM " />
+            <marker date="1518923275000" expanded="true" signature="2096:2176" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2379:2466" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2665:2748" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2949:3034" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="3179:3408" ph="CREATE TABLE... IF" />
           </folding>
         </state>
       </provider>
@@ -517,21 +560,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ROLODEX.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        <state relative-caret-position="360">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
-            <marker date="1518824068000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
-            <marker date="1518824068000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1163:1184" ph="SELECT * FRO... rolodex" />
-            <marker date="1518824068000" expanded="true" signature="1378:1410" ph="DELETE FROM " />
-            <marker date="1518824068000" expanded="true" signature="2103:2183" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2386:2473" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2672:2755" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="2956:3041" ph="UPDATE rolod... " />
-            <marker date="1518824068000" expanded="true" signature="3186:3415" ph="CREATE TABLE... IF" />
+            <marker date="1518923275000" expanded="true" signature="118:139" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="622:650" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:660" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="622:676" ph="INSERT INTO rolodex... " />
+            <marker date="1518923275000" expanded="true" signature="801:822" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1156:1177" ph="SELECT * FRO... rolodex" />
+            <marker date="1518923275000" expanded="true" signature="1371:1403" ph="DELETE FROM " />
+            <marker date="1518923275000" expanded="true" signature="2096:2176" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2379:2466" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2665:2748" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="2949:3034" ph="UPDATE rolod... " />
+            <marker date="1518923275000" expanded="true" signature="3179:3408" ph="CREATE TABLE... IF" />
           </folding>
         </state>
       </provider>
@@ -548,8 +591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ROLODEX_DISPLAY.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="331">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

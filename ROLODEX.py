@@ -26,11 +26,11 @@ def return_all_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     c.execute('SELECT * FROM rolodex')
-    customerlist = []
-    for item in c:
-        newstring = str(item[0]) + "  " + str(item[1]) + "  " + str(item[2]) + "  " + str(item[3]) + "  " + str(item[4]) + "\n"
-        customerlist.append(newstring)
-    return customerlist
+    #customerlist = []
+    #for item in c:
+    #    newstring = str(item[0]) + "  " + str(item[1]) + "  " + str(item[2]) + "  " + str(item[3]) + "  " + str(item[4]) + "\n"
+    #    customerlist.append(newstring)
+    return c
 
 
 def review_all_entries():
