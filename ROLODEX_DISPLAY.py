@@ -9,19 +9,9 @@ class Application(Frame):
         self.new_cust_font = tkFont.Font(size=30, weight='bold')
         self.label_cust_font = tkFont.Font(size=16, weight='bold')
         self.grid()
-        self.create_entries_and_scroll()
         self.create_input_customer()
         self.populate_entries()
 
-
-    def create_entries_and_scroll(self):
-        #self.scrollbar = Scrollbar(self)
-        #self.text = Text(self, height=6, width=80, relief=GROOVE)
-        self.entries_label = Label(self, text="Existing Customer Entries", font=self.new_cust_font).grid(row=6, columnspan=3, sticky=W)
-        #self.scrollbar.grid(column=3, row=7,)
-        #self.text.grid(column=0, row=7, columnspan=2, padx=10, pady=10)
-        #self.scrollbar.config(command=self.text.yview)
-        #self.text.config(yscrollcommand=self.scrollbar.set)
 
     def input_entry(self):
         self.customerName = self.e1.get()
@@ -49,6 +39,9 @@ class Application(Frame):
         Button(self, text="Enter Customer", command=self.input_entry).grid(row=5, column=0, columnspan=2, pady=10)
 
     def populate_entries(self):
+        self.entries_label = Label(self, text="Existing Customer Entries", font=self.new_cust_font).grid(row=6,
+                                                                                                         columnspan=3,
+                                                                                                         sticky=W)
         self.entrylist = ROLODEX.return_all_entries()
         self.rowstart = 7
         Label(self, text='ID', font=self.label_cust_font).grid(row=self.rowstart, column=0, sticky=W, padx=4)
