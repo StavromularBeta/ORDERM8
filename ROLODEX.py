@@ -127,16 +127,6 @@ def search_by_customer_phone_number(customer_phone_number):
     return c
 
 
-def search_by_customer_name(field, customer_name):
-    conn = sqlite3.connect("ORDERM8.db")
-    c = conn.cursor()
-    customer_name = (field, customer_name)
-    c.execute('''SELECT * FROM rolodex WHERE (?) = (?)''', customer_name)
-    return c
 
-
-customers = search_by_customer_phone_number("2")
-for item in customers:
-    print item
 
 

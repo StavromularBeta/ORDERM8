@@ -19,6 +19,7 @@ class Application(Frame):
     def load_new_customer(self):
         self.new_customer_button.grid_forget()
         self.view_all_customers.grid_forget()
+        self.search_customers_button.grid_forget()
         self.create_input_customer()
 
     def create_input_customer(self):
@@ -50,6 +51,7 @@ class Application(Frame):
     def load_all_customers(self):
         self.new_customer_button.grid_forget()
         self.view_all_customers.grid_forget()
+        self.search_customers_button.grid_forget()
         self.populate_entries()
 
     def populate_entries(self):
@@ -79,12 +81,52 @@ class Application(Frame):
             widget.destroy()
         self.create_rolodex_buttons()
 
+    def search_customers(self):
+        self.new_customer_button.grid_forget()
+        self.view_all_customers.grid_forget()
+        self.search_customers_button.grid_forget()
+        self.generate_customer_search()
+
+    def generate_customer_search(self):
+        Button(self.container, text="Main menu", command=self.main_menu).grid(row=0)
+        Label(self.container, text="Search Customers", font=self.new_cust_font).grid(row=1,columnspan=2)
+        self.search_result_frame = Frame(self.container)
+        self.search_result_frame.grid(row=4)
+        self.option_variable = StringVar(self.container)
+        self.option_variable.set('name')
+        self.search_options = OptionMenu(self.container, self.option_variable, "name", "Phone Number")
+        self.search_options.grid(row=2)
+        self.search_entry_field = Entry(self.container)
+        self.search_entry_field.grid(row=2,column=1)
+        Button(self.container, text="search", command=self.search_database).grid(row=3)
+
+    def search_database(self):
+        search_type = self.option_variable.get()
+        search_entry = self.search_entry_field.get()
+        if search_type == "name":
+            search_results = ROLODEX.search_by_customer_name(search_entry)
+        elif search_type == "Phone Number":
+            search_results = ROLODEX.search_by_customer_phone_number(search_entry)
+        self.display_results(search_results)
+
+    def display_results(self,search_results):
+        for widget in self.search_result_frame.winfo_children():
+            widget.destroy()
+        rowstart = 0
+        for customer_entry in search_results:
+            colstart = 0
+            for item in customer_entry:
+                Label(self.search_result_frame, text=item).grid(row=rowstart,column=colstart)
+                colstart += 1
+            rowstart +=1
 
     def create_rolodex_buttons(self):
         self.new_customer_button = Button(self.container, text="Enter New Customer", command=self.load_new_customer)
         self.view_all_customers = Button(self.container, text="View All Customers", command=self.load_all_customers)
+        self.search_customers_button = Button(self.container, text="Search Customers", command=self.search_customers)
         self.new_customer_button.grid()
         self.view_all_customers.grid(row=1)
+        self.search_customers_button.grid(row=3)
 
 app = Application()
 app.master.title('ORDERM8')
