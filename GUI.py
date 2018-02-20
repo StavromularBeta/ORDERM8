@@ -16,12 +16,10 @@ class Application(Frame):
         self.container = Frame(self)
         self.container.grid()
 
-    def input_entry(self):
-        self.customerName = self.e1.get()
-        self.customerPhoneNumber = self.e2.get()
-        self.customerAddress = self.e3.get()
-        self.customerPayMethod = self.e4.get()
-        ROLODEX.input_entry(self.customerName, self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
+    def load_new_customer(self):
+        self.new_customer_button.grid_forget()
+        self.view_all_customers.grid_forget()
+        self.create_input_customer()
 
     def create_input_customer(self):
         self.input_customer_label = Label(self.container, text="New Customer Entry", font=self.new_cust_font).grid(row=0, columnspan=2)
@@ -40,27 +38,19 @@ class Application(Frame):
         Button(self.container, text="Enter Customer", command=self.input_entry).grid(row=5, column=0, columnspan=2, pady=10)
         Button(self.container, text="Main Menu", command=self.main_menu).grid(row=5, column=3, columnspan=2, pady=10)
 
-    def load_new_customer(self):
-        self.new_customer_button.grid_forget()
-        self.view_all_customers.grid_forget()
-        self.create_input_customer()
+    def input_entry(self):
+        self.customerName = self.e1.get()
+        self.customerPhoneNumber = self.e2.get()
+        self.customerAddress = self.e3.get()
+        self.customerPayMethod = self.e4.get()
+        #here is where you need to check for errors.
+        ROLODEX.input_entry(self.customerName, self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
+
 
     def load_all_customers(self):
         self.new_customer_button.grid_forget()
         self.view_all_customers.grid_forget()
         self.populate_entries()
-
-    def main_menu(self):
-        for widget in self.container.winfo_children():
-            widget.destroy()
-        self.create_rolodex_buttons()
-
-
-    def create_rolodex_buttons(self):
-        self.new_customer_button = Button(self.container, text="Enter New Customer", command=self.load_new_customer)
-        self.view_all_customers = Button(self.container, text="View All Customers", command=self.load_all_customers)
-        self.new_customer_button.grid()
-        self.view_all_customers.grid(row=1)
 
     def populate_entries(self):
         Button(self.container, text="Main menu", command=self.main_menu).grid(row=0)
@@ -84,6 +74,17 @@ class Application(Frame):
             self.rowstart += 1
         return self.rowstart
 
+    def main_menu(self):
+        for widget in self.container.winfo_children():
+            widget.destroy()
+        self.create_rolodex_buttons()
+
+
+    def create_rolodex_buttons(self):
+        self.new_customer_button = Button(self.container, text="Enter New Customer", command=self.load_new_customer)
+        self.view_all_customers = Button(self.container, text="View All Customers", command=self.load_all_customers)
+        self.new_customer_button.grid()
+        self.view_all_customers.grid(row=1)
 
 app = Application()
 app.master.title('ORDERM8')

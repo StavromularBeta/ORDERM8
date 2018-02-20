@@ -110,6 +110,33 @@ def create_rolodex_table():
     c.execute(create_table)
     conn.commit()
 
-return_unique_ID()
+
+def search_by_customer_name(customer_name):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_name = (customer_name,)
+    c.execute('''SELECT * FROM rolodex WHERE name = (?)''', customer_name)
+    return c
+
+
+def search_by_customer_phone_number(customer_phone_number):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_phone_number = (customer_phone_number,)
+    c.execute('''SELECT * FROM rolodex WHERE phoneNumber = (?)''', customer_phone_number)
+    return c
+
+
+def search_by_customer_name(field, customer_name):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_name = (field, customer_name)
+    c.execute('''SELECT * FROM rolodex WHERE (?) = (?)''', customer_name)
+    return c
+
+
+customers = search_by_customer_phone_number("2")
+for item in customers:
+    print item
 
 

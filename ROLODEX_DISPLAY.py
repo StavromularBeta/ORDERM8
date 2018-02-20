@@ -18,7 +18,7 @@ class Application(Frame):
         self.customerPhoneNumber = self.e2.get()
         self.customerAddress = self.e3.get()
         self.customerPayMethod = self.e4.get()
-        ROLODEX.input_entry(self.customerName, self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
+        ROLODEX.input_entry(self.e1.get(), self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
         self.populate_entries()
 
     def create_input_customer(self):
