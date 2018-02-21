@@ -1,11 +1,12 @@
 from Tkinter import *
-import ROLODEX
+import SQL_functions
 import tkFont
 
 
 class Application(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
+        self.menu_frame = Frame(self)
         self.new_cust_font = tkFont.Font(size=30, weight='bold')
         self.label_cust_font = tkFont.Font(size=16, weight='bold')
         self.grid()
@@ -45,7 +46,7 @@ class Application(Frame):
         self.customerAddress = self.e3.get()
         self.customerPayMethod = self.e4.get()
         #here is where you need to check for errors.
-        ROLODEX.input_entry(self.customerName, self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
+        SQL_functions.input_entry(self.customerName, self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
 
 
     def load_all_customers(self):
@@ -59,7 +60,7 @@ class Application(Frame):
         self.entries_label = Label(self.container, text="Existing Customer Entries", font=self.new_cust_font).grid(row=1,
                                                                                                          columnspan=3,
                                                                                                          sticky=W)
-        self.entrylist = ROLODEX.return_all_entries()
+        self.entrylist = SQL_functions.return_all_entries()
         self.rowstart = 2
         Label(self.container, text='ID', font=self.label_cust_font).grid(row=self.rowstart, column=0, sticky=W, padx=4)
         Label(self.container, text='Name', font=self.label_cust_font).grid(row=self.rowstart, column=1, sticky=W, padx=10)
@@ -91,32 +92,37 @@ class Application(Frame):
         Button(self.container, text="Main menu", command=self.main_menu).grid(row=0)
         Label(self.container, text="Search Customers", font=self.new_cust_font).grid(row=1,columnspan=2)
         self.search_result_frame = Frame(self.container)
-        self.search_result_frame.grid(row=4)
+        self.search_result_frame.grid(row=4,columnspan=3)
         self.option_variable = StringVar(self.container)
         self.option_variable.set('name')
         self.search_options = OptionMenu(self.container, self.option_variable, "name", "Phone Number")
         self.search_options.grid(row=2)
         self.search_entry_field = Entry(self.container)
         self.search_entry_field.grid(row=2,column=1)
-        Button(self.container, text="search", command=self.search_database).grid(row=3)
+        Button(self.container, text="search", command=self.search_database).grid(row=2,column=2)
 
     def search_database(self):
         search_type = self.option_variable.get()
         search_entry = self.search_entry_field.get()
         if search_type == "name":
-            search_results = ROLODEX.search_by_customer_name(search_entry)
+            search_results = SQL_functions.search_by_customer_name(search_entry)
         elif search_type == "Phone Number":
-            search_results = ROLODEX.search_by_customer_phone_number(search_entry)
+            search_results = SQL_functions.search_by_customer_phone_number(search_entry)
         self.display_results(search_results)
 
-    def display_results(self,search_results):
+    def display_results(self, search_results):
         for widget in self.search_result_frame.winfo_children():
             widget.destroy()
-        rowstart = 0
+        Label(self.search_result_frame, text="ID", font=self.label_cust_font).grid(row=0, sticky=W, padx=10)
+        Label(self.search_result_frame, text="Name", font=self.label_cust_font).grid(row=0, column=1, sticky=W, padx=10)
+        Label(self.search_result_frame, text="Phone Number", font=self.label_cust_font).grid(row=0, column=2, sticky=W, padx=10)
+        Label(self.search_result_frame, text="Address", font=self.label_cust_font).grid(row=0, column=3, sticky=W, padx=10)
+        Label(self.search_result_frame, text="Payment Method", font=self.label_cust_font).grid(row=0, column=4, sticky=W, padx=10)
+        rowstart = 1
         for customer_entry in search_results:
             colstart = 0
             for item in customer_entry:
-                Label(self.search_result_frame, text=item).grid(row=rowstart,column=colstart)
+                Label(self.search_result_frame, text=item).grid(row=rowstart,column=colstart, sticky=W, padx=10)
                 colstart += 1
             rowstart +=1
 
@@ -128,6 +134,14 @@ class Application(Frame):
         self.view_all_customers.grid(row=1)
         self.search_customers_button.grid(row=3)
 
+
+
+
+
+
+
+
 app = Application()
 app.master.title('ORDERM8')
 mainloop()
+

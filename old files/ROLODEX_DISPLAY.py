@@ -1,6 +1,6 @@
 from Tkinter import *
 import tkFont
-import ROLODEX
+import SQL_functions
 
 
 class Application(Frame):
@@ -18,7 +18,7 @@ class Application(Frame):
         self.customerPhoneNumber = self.e2.get()
         self.customerAddress = self.e3.get()
         self.customerPayMethod = self.e4.get()
-        ROLODEX.input_entry(self.e1.get(), self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
+        SQL_functions.input_entry(self.e1.get(), self.customerPhoneNumber, self.customerAddress, self.customerPayMethod)
         self.populate_entries()
 
     def create_input_customer(self):
@@ -42,7 +42,7 @@ class Application(Frame):
         self.entries_label = Label(self, text="Existing Customer Entries", font=self.new_cust_font).grid(row=6,
                                                                                                          columnspan=3,
                                                                                                          sticky=W)
-        self.entrylist = ROLODEX.return_all_entries()
+        self.entrylist = SQL_functions.return_all_entries()
         self.rowstart = 7
         Label(self, text='ID', font=self.label_cust_font).grid(row=self.rowstart, column=0, sticky=W, padx=4)
         Label(self, text='Name', font=self.label_cust_font).grid(row=self.rowstart, column=1, sticky=W, padx=10)
