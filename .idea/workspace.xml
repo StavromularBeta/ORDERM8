@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ORDERM8.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/old files/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GUI.py" afterPath="$PROJECT_DIR$/old files/GUI.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ROLODEX.py" afterPath="$PROJECT_DIR$/SQL_functions.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ROLODEX_DISPLAY.py" afterPath="$PROJECT_DIR$/old files/ROLODEX_DISPLAY.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.db" afterPath="$PROJECT_DIR$/ORDERM8.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ORDERM8.iws" />
@@ -73,8 +67,8 @@
       <file leaf-file-name="ORDERM8.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ORDERM8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="75">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -704,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ORDERM8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="75">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
