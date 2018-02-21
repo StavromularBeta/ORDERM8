@@ -11,9 +11,9 @@ class MainApplication(tk.Frame):
         self.menu_frame = MenuFrame(self)
         self.window_frame = WindowFrame(self)
         self.banner_frame = BannerFrame(self)
-        self.menu_frame.grid(row=0, rowspan=2)
+        self.menu_frame.grid(row=1)
         self.window_frame.grid(row=1, column=1)
-        self.banner_frame.grid(row=0, column=1)
+        self.banner_frame.grid(row=0, column=0, columnspan=2)
         self.menu_frame.create_rolodex_buttons()
 
 
@@ -128,6 +128,11 @@ class WindowFrame(tk.Frame):
 class BannerFrame(tk.Frame):
     def __init__(self, parent):
         tk.Frame.__init__(self, parent)
+        self.parent = parent
+        self.make_banner()
+
+    def make_banner(self):
+        tk.Label(self, text="ORDERM8", font=self.parent.new_cust_font).grid()
 
 root = tk.Tk()
 MainApplication(root).grid()
