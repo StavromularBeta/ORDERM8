@@ -110,3 +110,22 @@ class WindowFrame(tk.Frame):
                 tk.Label(self.search_result_frame, text=item).grid(row=rowstart,column=colstart, sticky=tk.W, padx=10)
                 colstart += 1
             rowstart +=1
+
+    def new_order(self):
+        self.clear_window_frame()
+        self.order_sheet_label = tk.Label(self, text="New Order Sheet", font=self.parent.new_cust_font)
+        self.order_sheet = tk.Text(self, borderwidth=1)
+        self.submit_order_button = tk.Button(self, text="Submit Order", command=self.submit_new_order)
+        self.customer_order_entry_label = tk.Label(self, text="Customer Name", font=self.parent.label_cust_font)
+        self.customer_order_name_enty = tk.Entry(self)
+        self.order_sheet.grid(row=1, padx=10, columnspan=3)
+        self.order_sheet_label.grid(row=0, sticky=tk.W, padx=10)
+        self.submit_order_button.grid(row=2, column=2, sticky=tk.W, padx=10)
+        self.customer_order_entry_label.grid(row=2, column=0, sticky=tk.E, padx=10)
+        self.customer_order_name_enty.grid(row=2, column=1)
+
+    def submit_new_order(self):
+        order = self.order_sheet.get(1.0, tk.END)
+        customer_id = 1
+        SQL_functions.input_new_order(customer_id, order)
+
