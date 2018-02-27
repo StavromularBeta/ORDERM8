@@ -25,12 +25,13 @@ def return_unique_order_ID():
     uniqueID = IDs[0] + 1
     return str(uniqueID)
 
-def input_entry(customerName, customerPhoneNumber, customerAddress, customerPayMethod):
+
+def input_entry(customerFirstName, customerLastName, customerPhoneNumber, customerAddress, customerPayMethod):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     uniqueID = return_unique_ID()
-    rolodexEntry = (uniqueID, customerName, customerPhoneNumber, customerAddress, customerPayMethod)
-    c.execute('INSERT INTO rolodex VALUES (?,?,?,?,?)', rolodexEntry)
+    rolodexEntry = (uniqueID, customerFirstName, customerLastName, customerPhoneNumber, customerAddress, customerPayMethod)
+    c.execute('INSERT INTO rolodex VALUES (?,?,?,?,?,?)', rolodexEntry)
     conn.commit()
 
 
@@ -114,8 +115,9 @@ def create_rolodex_table():
     c = conn.cursor()
     create_table = """CREATE TABLE IF NOT EXISTS rolodex (
                       id integer PRIMARY KEY,
-                      name text,
-                      phoneNumber text,
+                      first_name text,
+                      last_name text,
+                      phone_number int,
                       address text,
                       payMethod text)
                       """
@@ -123,19 +125,25 @@ def create_rolodex_table():
     conn.commit()
 
 
-def search_by_customer_name(customer_name):
+def search_by_customer_first_name(customer_name):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     customer_name = (customer_name,)
-    c.execute('''SELECT * FROM rolodex WHERE name = (?)''', customer_name)
+    c.execute('''SELECT * FROM rolodex WHERE first_name = (?)''', customer_name)
     return c
 
+def search_by_customer_last_name(customer_name):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_name = (customer_name,)
+    c.execute('''SELECT * FROM rolodex WHERE last_name = (?)''', customer_name)
+    return c
 
 def search_by_customer_phone_number(customer_phone_number):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     customer_phone_number = (customer_phone_number,)
-    c.execute('''SELECT * FROM rolodex WHERE phoneNumber = (?)''', customer_phone_number)
+    c.execute('''SELECT * FROM rolodex WHERE phone_number = (?)''', customer_phone_number)
     return c
 
 
@@ -164,9 +172,10 @@ def input_new_order(customerID, order_list):
 def review_all_orders():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    c.execute('SELECT * FROM orders')
+    c.execute('DROP table rolodex')
     for item in c:
         orderlist = item[2].split()
         print item[0], item[1], orderlist, item[3]
 
-review_all_orders()
+
+
