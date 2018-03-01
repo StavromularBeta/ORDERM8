@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.db" afterPath="$PROJECT_DIR$/ORDERM8.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL_functions.py" afterPath="$PROJECT_DIR$/SQL_functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.py" afterPath="$PROJECT_DIR$/ORDERM8.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WindowFrame.py" afterPath="$PROJECT_DIR$/WindowFrame.py" />
     </list>
     <ignored path="ORDERM8.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="ORDERM8.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ORDERM8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -41,7 +40,7 @@
       <file leaf-file-name="MenuFrame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MenuFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="690">
               <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding />
             </state>
@@ -58,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
+            <state relative-caret-position="468">
+              <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <marker date="1519713950000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
@@ -93,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -131,10 +130,10 @@
         <option value="$PROJECT_DIR$/peppers_color_palette" />
         <option value="$PROJECT_DIR$/peppers_color_palette.txt" />
         <option value="$PROJECT_DIR$/BannerFrame.py" />
-        <option value="$PROJECT_DIR$/ORDERM8.py" />
         <option value="$PROJECT_DIR$/MenuFrame.py" />
-        <option value="$PROJECT_DIR$/WindowFrame.py" />
         <option value="$PROJECT_DIR$/SQL_functions.py" />
+        <option value="$PROJECT_DIR$/WindowFrame.py" />
+        <option value="$PROJECT_DIR$/ORDERM8.py" />
       </list>
     </option>
   </component>
@@ -439,7 +438,7 @@
     <frame x="0" y="23" width="1422" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753623" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2789855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.10724638" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -497,6 +496,75 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ORDERM8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BannerFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1519713950000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1519713950000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1519713950000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1519713950000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1519713950000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1519713950000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1519713950000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1519713950000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1519713950000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1519713950000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1519713950000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1519713950000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1519713950000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1519713950000" expanded="true" signature="5059:5094" ph="INSERT INTO orders... " />
+            <marker date="1519713950000" expanded="true" signature="5232:5250" ph="DROP table r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WindowFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ORDERM8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -845,46 +913,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peppers_color_palette.txt" />
-    <entry file="file://$PROJECT_DIR$/ORDERM8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MenuFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BannerFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WindowFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SQL_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="149" column="26" selection-start-line="149" selection-start-column="26" selection-end-line="149" selection-end-column="26" />
+        <state relative-caret-position="468">
+          <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <marker date="1519713950000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
@@ -910,6 +942,42 @@
             <marker date="1519713950000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
             <marker date="1519713950000" expanded="true" signature="5059:5094" ph="INSERT INTO orders... " />
             <marker date="1519713950000" expanded="true" signature="5232:5250" ph="DROP table r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BannerFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ORDERM8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MenuFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WindowFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

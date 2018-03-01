@@ -55,22 +55,47 @@ class WindowFrame(tk.Frame):
                                                                                                                    sticky=tk.W)
         self.entrylist = SQL_functions.return_all_entries()
         self.rowstart = 2
-        tk.Label(self, text='ID', font=self.parent.label_cust_font).grid(row=self.rowstart, column=0, sticky=tk.W, padx=4)
-        tk.Label(self, text='First Name', font=self.parent.label_cust_font).grid(row=self.rowstart, column=1, sticky=tk.W, padx=10)
-        tk.Label(self, text='Last Name', font=self.parent.label_cust_font).grid(row=self.rowstart, column=2, sticky=tk.W, padx=10)
-        tk.Label(self, text='Phone Number', font=self.parent.label_cust_font).grid(row=self.rowstart, column=3, sticky=tk.W, padx=10)
-        tk.Label(self, text='Address', font=self.parent.label_cust_font).grid(row=self.rowstart, column=4, sticky=tk.W, padx=10)
-        tk.Label(self, text='Payment Method', font=self.parent.label_cust_font).grid(row=self.rowstart, column=5, sticky=tk.W, padx=10)
+        tk.Label(self, text='View', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                         column=0,
+                                                                         sticky=tk.W,
+                                                                         padx=4)
+        tk.Label(self, text='First Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                                 column=1,
+                                                                                 sticky=tk.W,
+                                                                                 padx=10)
+        tk.Label(self, text='Last Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                                column=2,
+                                                                                sticky=tk.W,
+                                                                                padx=10)
+        tk.Label(self, text='Phone Number', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                                   column=3,
+                                                                                   sticky=tk.W,
+                                                                                   padx=10)
+        tk.Label(self, text='Address', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                              column=4,
+                                                                              sticky=tk.W,
+                                                                              padx=10)
+        tk.Label(self, text='Payment Method', font=self.parent.label_cust_font).grid(row=self.rowstart,
+                                                                                     column=5,
+                                                                                     sticky=tk.W,
+                                                                                     padx=10)
         self.rowstart += 1
         for item in self.entrylist:
-            tk.Label(self, text=item[0]).grid(row=self.rowstart, column=0, sticky=tk.W, padx=4)
+
+            tk.Button(self, text='GO', command=lambda item=item: self.customer_page(item)).grid(row=self.rowstart,
+                                                                                                column=0,
+                                                                                                sticky=tk.W,
+                                                                                                padx=10)
             tk.Label(self, text=item[1]).grid(row=self.rowstart, column=1, sticky=tk.W, padx=10)
             tk.Label(self, text=item[2]).grid(row=self.rowstart, column=2, sticky=tk.W, padx=10)
             tk.Label(self, text=item[3]).grid(row=self.rowstart, column=3, sticky=tk.W, padx=10)
             tk.Label(self, text=item[4]).grid(row=self.rowstart, column=4, sticky=tk.W, padx=10)
             tk.Label(self, text=item[5]).grid(row=self.rowstart, column=5, sticky=tk.W, padx=10)
             self.rowstart += 1
-        return self.rowstart
+
+    def customer_page(self, customer_entry):
+        self.clear_window_frame()
+        tk.Label(self, text=customer_entry[1] + " " + customer_entry[2]).grid(row=0, column=0)
 
     def generate_customer_search(self):
         self.clear_window_frame()
@@ -78,7 +103,7 @@ class WindowFrame(tk.Frame):
         self.search_result_frame = tk.Frame(self)
         self.search_result_frame.grid(row=4, columnspan=3)
         self.option_variable = tk.StringVar(self)
-        self.option_variable.set('name')
+        self.option_variable.set('First Name')
         self.search_options = tk.OptionMenu(self, self.option_variable, "First Name", "Last Name", "Phone Number")
         self.search_options.grid(row=2)
         self.search_entry_field = tk.Entry(self)
@@ -127,7 +152,10 @@ class WindowFrame(tk.Frame):
         for customer_entry in search_results:
             colstart = 0
             for item in customer_entry:
-                tk.Label(self.search_result_frame, text=item).grid(row=rowstart,column=colstart, sticky=tk.W, padx=10)
+                tk.Label(self.search_result_frame, text=item).grid(row=rowstart,
+                                                                   column=colstart,
+                                                                   sticky=tk.W,
+                                                                   padx=10)
                 colstart += 1
             rowstart +=1
 
