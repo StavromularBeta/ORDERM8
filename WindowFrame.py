@@ -12,8 +12,7 @@ class WindowFrame(tk.Frame):
             widget.destroy()
 
     def home_page(self):
-        for widget in self.winfo_children():
-            widget.destroy()
+        self.clear_window_frame()
         tk.Label(self, text="This is the homepage.", font=self.parent.new_cust_font).grid()
 
     def load_new_customer(self):
@@ -56,9 +55,9 @@ class WindowFrame(tk.Frame):
         self.entrylist = SQL_functions.return_all_entries()
         self.rowstart = 2
         tk.Label(self, text='View', font=self.parent.label_cust_font).grid(row=self.rowstart,
-                                                                         column=0,
-                                                                         sticky=tk.W,
-                                                                         padx=4)
+                                                                           column=0,
+                                                                           sticky=tk.W,
+                                                                           padx=4)
         tk.Label(self, text='First Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                                  column=1,
                                                                                  sticky=tk.W,
@@ -82,10 +81,14 @@ class WindowFrame(tk.Frame):
         self.rowstart += 1
         for item in self.entrylist:
 
-            tk.Button(self, text='GO', command=lambda item=item: self.customer_page(item)).grid(row=self.rowstart,
-                                                                                                column=0,
-                                                                                                sticky=tk.W,
-                                                                                                padx=10)
+            tk.Button(self,
+                      text='GO',
+                      width=4,
+                      height=2,
+                      command=lambda item=item: self.customer_page(item)).grid(row=self.rowstart,
+                                                                               column=0,
+                                                                               sticky=tk.W,
+                                                                               padx=10)
             tk.Label(self, text=item[1]).grid(row=self.rowstart, column=1, sticky=tk.W, padx=10)
             tk.Label(self, text=item[2]).grid(row=self.rowstart, column=2, sticky=tk.W, padx=10)
             tk.Label(self, text=item[3]).grid(row=self.rowstart, column=3, sticky=tk.W, padx=10)
@@ -124,10 +127,10 @@ class WindowFrame(tk.Frame):
     def display_results(self, search_results):
         for widget in self.search_result_frame.winfo_children():
             widget.destroy()
-        tk.Label(self.search_result_frame, text="ID", font=self.parent.label_cust_font).grid(row=0,
-                                                                                             column=0,
-                                                                                             sticky=tk.W,
-                                                                                             padx=10)
+        tk.Label(self.search_result_frame, text="View", font=self.parent.label_cust_font).grid(row=0,
+                                                                                               column=0,
+                                                                                               sticky=tk.W,
+                                                                                               padx=4)
         tk.Label(self.search_result_frame, text="First Name", font=self.parent.label_cust_font).grid(row=0,
                                                                                                column=1,
                                                                                                sticky=tk.W,
@@ -150,14 +153,35 @@ class WindowFrame(tk.Frame):
                                                                                                          padx=10)
         rowstart = 1
         for customer_entry in search_results:
-            colstart = 0
-            for item in customer_entry:
-                tk.Label(self.search_result_frame, text=item).grid(row=rowstart,
-                                                                   column=colstart,
-                                                                   sticky=tk.W,
-                                                                   padx=10)
-                colstart += 1
-            rowstart +=1
+            tk.Button(self.search_result_frame,
+                      text="GO",
+                      width=4,
+                      height=2,
+                      command=lambda i=customer_entry: self.customer_page(customer_entry)).grid(row=rowstart,
+                                                                                                column=0,
+                                                                                                sticky=tk.W,
+                                                                                                padx=10)
+            tk.Label(self.search_result_frame, text=customer_entry[1]).grid(row=rowstart,
+                                                                            column=1,
+                                                                            sticky=tk.W,
+                                                                            padx=10)
+            tk.Label(self.search_result_frame, text=customer_entry[2]).grid(row=rowstart,
+                                                                            column=2,
+                                                                            sticky=tk.W,
+                                                                            padx=10)
+            tk.Label(self.search_result_frame, text=customer_entry[3]).grid(row=rowstart,
+                                                                            column=3,
+                                                                            sticky=tk.W,
+                                                                            padx=10)
+            tk.Label(self.search_result_frame, text=customer_entry[4]).grid(row=rowstart,
+                                                                            column=4,
+                                                                            sticky=tk.W,
+                                                                            padx=10)
+            tk.Label(self.search_result_frame, text=customer_entry[5]).grid(row=rowstart,
+                                                                            column=5,
+                                                                            sticky=tk.W,
+                                                                            padx=10)
+            rowstart += 1
 
     def new_order(self):
         self.clear_window_frame()
