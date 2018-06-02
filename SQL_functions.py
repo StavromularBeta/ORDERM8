@@ -160,6 +160,39 @@ def create_orders_table():
     conn.commit()
 
 
+def create_customerprefs_table():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    create_table = """CREATE TABLE IF NOT EXISTS customerprefs (
+                      id integer PRIMARY KEY,
+                      customer_id integer,
+                      field_id integer,
+                      description text)
+                      """
+    c.execute(create_table)
+    conn.commit()
+
+def new_customerpreference():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    uniqueID = return_unique_customerpreference_ID()
+    orderEntry = (1, 2, 10, "Likes Organic Bananas")
+    c.execute('INSERT INTO customerprefs VALUES (?,?,?,?)', orderEntry)
+
+
+def return_unique_customerpreference_ID():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM customerprefs')
+    IDs = []
+    for item in c:
+        ID = int(item[0])
+        IDs.append(ID)
+    IDs = sorted(IDs, key=int, reverse=True)
+    uniqueID = IDs[0] + 1
+    return str(uniqueID)
+
+
 def input_new_order(customerID, order_list):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -176,6 +209,4 @@ def review_all_orders():
     for item in c:
         orderlist = item[2].split()
         print item[0], item[1], orderlist, item[3]
-
-
 

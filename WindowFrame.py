@@ -11,9 +11,13 @@ class WindowFrame(tk.Frame):
         for widget in self.winfo_children():
             widget.destroy()
 
+    # Home Page Functions
+
     def home_page(self):
         self.clear_window_frame()
         tk.Label(self, text="This is the homepage.", font=self.parent.new_cust_font).grid()
+
+    # New Customer Entry Functions
 
     def load_new_customer(self):
         self.clear_window_frame()
@@ -46,6 +50,8 @@ class WindowFrame(tk.Frame):
                                   self.customerPhoneNumber,
                                   self.customerAddress,
                                   self.customerPayMethod)
+
+    # Existing Customer Functions
 
     def populate_entries(self):
         self.clear_window_frame()
@@ -96,9 +102,23 @@ class WindowFrame(tk.Frame):
             tk.Label(self, text=item[5]).grid(row=self.rowstart, column=5, sticky=tk.W, padx=10)
             self.rowstart += 1
 
+    # Customer Page Functions
+
     def customer_page(self, customer_entry):
         self.clear_window_frame()
-        tk.Label(self, text=customer_entry[1] + " " + customer_entry[2]).grid(row=0, column=0)
+        self.customer_information_frame = tk.Frame(self)
+        self.customer_delivery_preferences_frame = tk.Frame(self)
+        self.customer_information_frame.grid(row=0, column=0)
+        self.customer_delivery_preferences_frame.grid(row=1, column=0, sticky=tk.W)
+        tk.Label(self.customer_information_frame, text=customer_entry[1] + " " + customer_entry[2], font=self.parent.label_cust_font).grid(row=0,
+                                                                                                                column=0,
+                                                                                                                sticky=tk.W)
+        tk.Label(self.customer_information_frame, text="Phone : " + str(customer_entry[3])).grid(row=1, column=0, sticky=tk.W)
+        tk.Label(self.customer_information_frame, text="Address : " + str(customer_entry[4])).grid(row=2, column=0, sticky=tk.W)
+        tk.Label(self.customer_information_frame, text="Preferred payment method : " + customer_entry[5]).grid(row=3, column=0, sticky=tk.W)
+        tk.Label(self.customer_delivery_preferences_frame, text="Delivery Preferences", font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
+
+    # Customer Search Functions
 
     def generate_customer_search(self):
         self.clear_window_frame()
@@ -182,6 +202,8 @@ class WindowFrame(tk.Frame):
                                                                             sticky=tk.W,
                                                                             padx=10)
             rowstart += 1
+
+    # Ordering Functions
 
     def new_order(self):
         self.clear_window_frame()
