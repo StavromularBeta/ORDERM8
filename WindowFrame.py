@@ -121,6 +121,7 @@ class WindowFrame(tk.Frame):
         self.customer_delivery_preferences_textbox = tk.Text(self.customer_delivery_preferences_frame,
                                                              borderwidth=1,
                                                              highlightbackground="#D24C45")
+        self.insert_delivery_preferences_onstart()
         self.customer_delivery_preferences_textbox.grid(row=2, column=0, sticky=tk.W)
         self.customer_delivery_preferences_textbox_savebutton = tk.Button(self.customer_delivery_preferences_frame,
                                                                           text="Save Preferences",
@@ -129,17 +130,24 @@ class WindowFrame(tk.Frame):
                                                                    column=0,
                                                                    sticky=tk.W)
 
+    def insert_delivery_preferences_onstart(self):
+        try:
+            startup_delivery_preferences = SQL_functions.get_latest_customerprefs(self.current_customer_entry[0])[3]
+            self.customer_delivery_preferences_textbox.insert('end-1c', startup_delivery_preferences)
+        except TypeError:
+            startup_delivery_preferences = 'Enter Delivery Notes Here!'
+            self.customer_delivery_preferences_textbox.insert('end-1c', startup_delivery_preferences)
+
     def save_customer_delivery_preferences(self):
         delivery_preferences = self.customer_delivery_preferences_textbox.get("1.0", 'end-1c')
         SQL_functions.new_customer_delivery_preference(self.current_customer_entry[0], delivery_preferences)
-
-
 
     # Customer Search Functions
 
     def generate_customer_search(self):
         self.clear_window_frame()
-        tk.Label(self, text="Search Customers", font=self.parent.new_cust_font).grid(row=1, columnspan=2)
+        tk.Label(self, text="Search Customers", font=self.parent.new_cust_font).grid(row=1,
+                                                                                     columnspan=2)
         self.search_result_frame = tk.Frame(self)
         self.search_result_frame.grid(row=4, columnspan=3)
         self.option_variable = tk.StringVar(self)

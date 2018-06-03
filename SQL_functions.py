@@ -217,7 +217,13 @@ def return_all_customerprefs_entries():
     c.execute('SELECT * FROM customerprefs')
     return c
 
-for item in return_all_customerprefs_entries():
-    print item
+
+def get_latest_customerprefs(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_id_tuple = (customer_id,)
+    c.execute('SELECT * FROM customerprefs WHERE customer_id=(?) ORDER BY id DESC LIMIT 1', customer_id_tuple)
+    for item in c:
+        return item
 
 
