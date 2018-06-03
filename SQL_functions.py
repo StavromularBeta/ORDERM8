@@ -172,13 +172,14 @@ def create_customerprefs_table():
     c.execute(create_table)
     conn.commit()
 
-def new_customerpreference():
+
+def new_customer_delivery_preference(customerID, customer_delivery_preference):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     uniqueID = return_unique_customerpreference_ID()
-    orderEntry = (1, 2, 10, "Likes Organic Bananas")
+    orderEntry = (uniqueID, customerID, 10, customer_delivery_preference)
     c.execute('INSERT INTO customerprefs VALUES (?,?,?,?)', orderEntry)
-
+    conn.commit()
 
 def return_unique_customerpreference_ID():
     conn = sqlite3.connect("ORDERM8.db")
@@ -202,11 +203,21 @@ def input_new_order(customerID, order_list):
     conn.commit()
 
 
-def review_all_orders():
+#def drop_rolodex_table():
+#    conn = sqlite3.connect("ORDERM8.db")
+#    c = conn.cursor()
+#    c.execute('DROP table rolodex')
+#    for item in c:
+#        orderlist = item[2].split()
+#        print item[0], item[1], orderlist, item[3]
+
+def return_all_customerprefs_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    c.execute('DROP table rolodex')
-    for item in c:
-        orderlist = item[2].split()
-        print item[0], item[1], orderlist, item[3]
+    c.execute('SELECT * FROM customerprefs')
+    return c
+
+for item in return_all_customerprefs_entries():
+    print item
+
 

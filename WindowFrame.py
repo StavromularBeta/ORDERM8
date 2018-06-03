@@ -106,9 +106,10 @@ class WindowFrame(tk.Frame):
 
     def customer_page(self, customer_entry):
         self.clear_window_frame()
+        self.current_customer_entry = customer_entry
         self.customer_information_frame = tk.Frame(self)
         self.customer_delivery_preferences_frame = tk.Frame(self)
-        self.customer_information_frame.grid(row=0, column=0)
+        self.customer_information_frame.grid(row=0, column=0, sticky=tk.W)
         self.customer_delivery_preferences_frame.grid(row=1, column=0, sticky=tk.W)
         tk.Label(self.customer_information_frame, text=customer_entry[1] + " " + customer_entry[2], font=self.parent.label_cust_font).grid(row=0,
                                                                                                                 column=0,
@@ -117,6 +118,22 @@ class WindowFrame(tk.Frame):
         tk.Label(self.customer_information_frame, text="Address : " + str(customer_entry[4])).grid(row=2, column=0, sticky=tk.W)
         tk.Label(self.customer_information_frame, text="Preferred payment method : " + customer_entry[5]).grid(row=3, column=0, sticky=tk.W)
         tk.Label(self.customer_delivery_preferences_frame, text="Delivery Preferences", font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
+        self.customer_delivery_preferences_textbox = tk.Text(self.customer_delivery_preferences_frame,
+                                                             borderwidth=1,
+                                                             highlightbackground="#D24C45")
+        self.customer_delivery_preferences_textbox.grid(row=2, column=0, sticky=tk.W)
+        self.customer_delivery_preferences_textbox_savebutton = tk.Button(self.customer_delivery_preferences_frame,
+                                                                          text="Save Preferences",
+                                                                          command=self.save_customer_delivery_preferences)
+        self.customer_delivery_preferences_textbox_savebutton.grid(row=3,
+                                                                   column=0,
+                                                                   sticky=tk.W)
+
+    def save_customer_delivery_preferences(self):
+        delivery_preferences = self.customer_delivery_preferences_textbox.get("1.0", 'end-1c')
+        SQL_functions.new_customer_delivery_preference(self.current_customer_entry[0], delivery_preferences)
+
+
 
     # Customer Search Functions
 
