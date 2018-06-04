@@ -111,6 +111,8 @@ class WindowFrame(tk.Frame):
         self.customer_delivery_preferences_frame = tk.Frame(self)
         self.customer_information_frame.grid(row=0, column=0, sticky=tk.W)
         self.customer_delivery_preferences_frame.grid(row=1, column=0, sticky=tk.W)
+        self.customer_food_preferences_frame = tk.Frame(self)
+        self.customer_food_preferences_frame.grid(row=1, column=1, sticky=tk.W)
         tk.Label(self.customer_information_frame, text=customer_entry[1] + " " + customer_entry[2], font=self.parent.label_cust_font).grid(row=0,
                                                                                                                 column=0,
                                                                                                                 sticky=tk.W)
@@ -129,6 +131,26 @@ class WindowFrame(tk.Frame):
         self.customer_delivery_preferences_textbox_savebutton.grid(row=3,
                                                                    column=0,
                                                                    sticky=tk.W)
+        tk.Label(self.customer_food_preferences_frame,
+                 text="Food Preferences",
+                 font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
+        self.customer_food_preferences_textbox = tk.Text(self.customer_food_preferences_frame,
+                                                         borderwidth=1,
+                                                         highlightbackground="#D24C45")
+        self.insert_food_preferences_onstart()
+        self.customer_food_preferences_textbox_savebutton = tk.Button(self.customer_food_preferences_frame,
+                                                                      text="Save Preferences",
+                                                                      command=self.save_customer_food_preferences)
+        self.customer_food_preferences_textbox_savebutton.grid(row=3, column=0, sticky=tk.W)
+        self.customer_food_preferences_textbox.grid(row=1, column=0, sticky=tk.W)
+
+    def insert_food_preferences_onstart(self):
+        try:
+            startup_food_preferences = SQL_functions.get_latest_foodprefs(self.current_customer_entry[0])[3]
+            self.customer_food_preferences_textbox.insert('end-1c', startup_food_preferences)
+        except TypeError:
+            startup_food_preferences = 'Enter Food Preferences Here!'
+            self.customer_food_preferences_textbox.insert('end-1c', startup_food_preferences)
 
     def insert_delivery_preferences_onstart(self):
         try:
@@ -141,6 +163,11 @@ class WindowFrame(tk.Frame):
     def save_customer_delivery_preferences(self):
         delivery_preferences = self.customer_delivery_preferences_textbox.get("1.0", 'end-1c')
         SQL_functions.new_customer_delivery_preference(self.current_customer_entry[0], delivery_preferences)
+
+    def save_customer_food_preferences(self):
+        food_preferences = self.customer_food_preferences_textbox.get("1.0", 'end-1c')
+        SQL_functions.new_customer_food_preference(self.current_customer_entry[0], food_preferences)
+
 
     # Customer Search Functions
 

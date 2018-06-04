@@ -222,8 +222,28 @@ def get_latest_customerprefs(customer_id):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     customer_id_tuple = (customer_id,)
-    c.execute('SELECT * FROM customerprefs WHERE customer_id=(?) ORDER BY id DESC LIMIT 1', customer_id_tuple)
+    c.execute('SELECT * FROM customerprefs WHERE customer_id=(?) AND field_id = 10 ORDER BY id DESC LIMIT 1',
+              customer_id_tuple)
     for item in c:
         return item
 
 
+def get_latest_foodprefs(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_id_tuple = (customer_id,)
+    c.execute('SELECT * FROM customerprefs WHERE customer_id=(?) AND field_id = 20 ORDER BY id DESC LIMIT 1',
+              customer_id_tuple)
+    for item in c:
+        return item
+
+def new_customer_food_preference(customerID, customer_food_preference):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    uniqueID = return_unique_customerpreference_ID()
+    orderEntry = (uniqueID, customerID, 20, customer_food_preference)
+    c.execute('INSERT INTO customerprefs VALUES (?,?,?,?)', orderEntry)
+    conn.commit()
+
+for item in return_all_customerprefs_entries():
+    print item

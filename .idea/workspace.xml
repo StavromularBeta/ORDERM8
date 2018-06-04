@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.db" afterPath="$PROJECT_DIR$/ORDERM8.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL_functions.py" afterPath="$PROJECT_DIR$/SQL_functions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WindowFrame.py" afterPath="$PROJECT_DIR$/WindowFrame.py" />
     </list>
@@ -58,42 +59,44 @@
       <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="248" column="14" selection-start-line="248" selection-start-column="14" selection-end-line="248" selection-end-column="14" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-                <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-                <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-                <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-                <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-                <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-                <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-                <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-                <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-                <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-                <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-                <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-                <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-                <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-                <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-                <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-                <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-                <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-                <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-                <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-                <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-                <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-                <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+                <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+                <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+                <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+                <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+                <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+                <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+                <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+                <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+                <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+                <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+                <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+                <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+                <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+                <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+                <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+                <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+                <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+                <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
               </folding>
             </state>
           </provider>
@@ -102,8 +105,8 @@
       <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+            <state relative-caret-position="303">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -182,8 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,6 +205,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +450,7 @@
     <frame x="0" y="23" width="1422" height="873" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.307971" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31231883" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.10724638" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -535,38 +538,40 @@
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -611,38 +616,40 @@
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -687,38 +694,40 @@
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -763,38 +772,40 @@
           <caret line="163" column="24" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -824,38 +835,40 @@
           <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -866,38 +879,40 @@
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -922,38 +937,40 @@
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -978,38 +995,40 @@
           <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -1028,38 +1047,40 @@
           <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -1078,38 +1099,40 @@
           <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
           </folding>
         </state>
       </provider>
@@ -1150,11 +1173,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MenuFrame.py">
+    <entry file="file://$PROJECT_DIR$/SQL_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-          <folding />
+          <caret line="248" column="14" selection-start-line="248" selection-start-column="14" selection-end-line="248" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1528082506000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
+            <marker date="1528082506000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
+            <marker date="1528082506000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
+            <marker date="1528082506000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
+            <marker date="1528082506000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
+            <marker date="1528082506000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
+            <marker date="1528082506000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
+            <marker date="1528082506000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
+            <marker date="1528082506000" expanded="true" signature="6333:6351" ph="DROP table r... " />
+            <marker date="1528082506000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
+            <marker date="1528082506000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="6787:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7112:7204" ph="SELECT * FRO... customerprefs" />
+            <marker date="1528082506000" expanded="true" signature="7553:7595" ph="INSERT INTO customerprefs... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,52 +1225,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQL_functions.py">
+    <entry file="file://$PROJECT_DIR$/MenuFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1528061727000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
-            <marker date="1528061727000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1033" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="993:1049" ph="INSERT INTO rolodex... " />
-            <marker date="1528061727000" expanded="true" signature="1174:1195" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1317:1338" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="1532:1564" ph="DELETE FROM " />
-            <marker date="1528061727000" expanded="true" signature="2257:2337" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2540:2627" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="2826:2909" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3110:3195" ph="UPDATE rolod... " />
-            <marker date="1528061727000" expanded="true" signature="3340:3613" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="3855:3869" ph="SELECT * FRO... ROLO" />
-            <marker date="1528061727000" expanded="true" signature="3855:3882" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3895" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3898" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="3855:3899" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4099:4142" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4369:4415" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="4570:4753" ph="CREATE TABLE... orders" />
-            <marker date="1528061727000" expanded="true" signature="4947:5158" ph="CREATE TABLE... IF" />
-            <marker date="1528061727000" expanded="true" signature="5518:5560" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="5715:5742" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6155:6190" ph="INSERT INTO orders... " />
-            <marker date="1528061727000" expanded="true" signature="6333:6351" ph="DROP table r... " />
-            <marker date="1528061727000" expanded="true" signature="6582:6596" ph="SELECT * FRO... rolodex" />
-            <marker date="1528061727000" expanded="true" signature="6582:6609" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6833" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6835" ph="SELECT row F... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6836" ph="SELECT * FRO... customerprefs" />
-            <marker date="1528061727000" expanded="true" signature="6787:6861" ph="SELECT * FRO... customerprefs" />
-          </folding>
+        <state relative-caret-position="468">
+          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WindowFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="136" column="25" selection-start-line="136" selection-start-column="25" selection-end-line="136" selection-end-column="25" />
+        <state relative-caret-position="303">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
