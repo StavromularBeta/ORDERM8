@@ -237,6 +237,7 @@ def get_latest_foodprefs(customer_id):
     for item in c:
         return item
 
+
 def new_customer_food_preference(customerID, customer_food_preference):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -245,5 +246,11 @@ def new_customer_food_preference(customerID, customer_food_preference):
     c.execute('INSERT INTO customerprefs VALUES (?,?,?,?)', orderEntry)
     conn.commit()
 
-for item in return_all_customerprefs_entries():
-    print item
+
+def delete_customer_and_customer_records(customerID):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    id = (customerID,)
+    c.execute('DELETE FROM rolodex WHERE id=(?)', id)
+    c.execute('DELETE FROM customerprefs WHERE customer_id=(?)', id)
+    conn.commit()

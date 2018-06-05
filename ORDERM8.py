@@ -7,7 +7,7 @@ import BannerFrame
 
 class MainApplication(tk.Frame):
     def __init__(self, parent):
-        tk.Frame.__init__(self, parent, width=1200, height=800)
+        tk.Frame.__init__(self, parent, width=1400, height=800)
         self.pack_propagate(0)
         self.pack()
         self.new_cust_font = tkFont.Font(size=30, weight='bold')
@@ -22,7 +22,7 @@ class MainApplication(tk.Frame):
         self.window_frame.home_page()
 
 root = tk.Tk()
-root.geometry('1200x800')
+root.geometry('1400x800')
 MainApplication(root).grid()
 root.mainloop()
 

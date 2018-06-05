@@ -143,6 +143,14 @@ class WindowFrame(tk.Frame):
                                                                       command=self.save_customer_food_preferences)
         self.customer_food_preferences_textbox_savebutton.grid(row=3, column=0, sticky=tk.W)
         self.customer_food_preferences_textbox.grid(row=1, column=0, sticky=tk.W)
+        self.delete_current_customer_button = tk.Button(self.customer_information_frame,
+                                                        text="Delete Customer",
+                                                        command=self.delete_current_customer)
+        self.delete_current_customer_button.grid(row=0, column=2, sticky=tk.E)
+
+    def delete_current_customer(self):
+        SQL_functions.delete_customer_and_customer_records(self.current_customer_entry[0])
+        self.populate_entries()
 
     def insert_food_preferences_onstart(self):
         try:
