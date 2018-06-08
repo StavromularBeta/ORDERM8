@@ -55,39 +55,46 @@ class WindowFrame(tk.Frame):
 
     def populate_entries(self):
         self.clear_window_frame()
-        self.entries_label = tk.Label(self, text="Existing Customer Entries", font=self.parent.new_cust_font).grid(row=1,
+        self.allentries_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,1000,1000))
+        self.allentries_scroll = tk.Scrollbar(self, orient="vertical", command=self.allentries_canvas.yview)
+        self.allentries_frame = tk.Frame(self)
+        self.allentries_canvas.configure(yscrollcommand=self.allentries_scroll.set)
+        self.allentries_scroll.pack(side='right', fill='y')
+        self.allentries_canvas.pack(side="left", fill='y')
+        self.allentries_canvas.create_window((0,0), window=self.allentries_frame, anchor='nw')
+        self.entries_label = tk.Label(self.allentries_frame, text="Existing Customer Entries", font=self.parent.new_cust_font).grid(row=1,
                                                                                                                    columnspan=3,
                                                                                                                    sticky=tk.W)
         self.entrylist = SQL_functions.return_all_entries()
         self.rowstart = 2
-        tk.Label(self, text='View', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='View', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                            column=0,
                                                                            sticky=tk.W,
                                                                            padx=4)
-        tk.Label(self, text='First Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='First Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                                  column=1,
                                                                                  sticky=tk.W,
                                                                                  padx=10)
-        tk.Label(self, text='Last Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='Last Name', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                                 column=2,
                                                                                 sticky=tk.W,
                                                                                 padx=10)
-        tk.Label(self, text='Phone Number', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='Phone Number', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                                    column=3,
                                                                                    sticky=tk.W,
                                                                                    padx=10)
-        tk.Label(self, text='Address', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='Address', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                               column=4,
                                                                               sticky=tk.W,
                                                                               padx=10)
-        tk.Label(self, text='Payment Method', font=self.parent.label_cust_font).grid(row=self.rowstart,
+        tk.Label(self.allentries_frame, text='Payment Method', font=self.parent.label_cust_font).grid(row=self.rowstart,
                                                                                      column=5,
                                                                                      sticky=tk.W,
                                                                                      padx=10)
         self.rowstart += 1
         for item in self.entrylist:
 
-            tk.Button(self,
+            tk.Button(self.allentries_frame,
                       text='GO',
                       width=4,
                       height=2,
@@ -95,11 +102,11 @@ class WindowFrame(tk.Frame):
                                                                                column=0,
                                                                                sticky=tk.W,
                                                                                padx=10)
-            tk.Label(self, text=item[1]).grid(row=self.rowstart, column=1, sticky=tk.W, padx=10)
-            tk.Label(self, text=item[2]).grid(row=self.rowstart, column=2, sticky=tk.W, padx=10)
-            tk.Label(self, text=item[3]).grid(row=self.rowstart, column=3, sticky=tk.W, padx=10)
-            tk.Label(self, text=item[4]).grid(row=self.rowstart, column=4, sticky=tk.W, padx=10)
-            tk.Label(self, text=item[5]).grid(row=self.rowstart, column=5, sticky=tk.W, padx=10)
+            tk.Label(self.allentries_frame, text=item[1]).grid(row=self.rowstart, column=1, sticky=tk.W, padx=10)
+            tk.Label(self.allentries_frame, text=item[2]).grid(row=self.rowstart, column=2, sticky=tk.W, padx=10)
+            tk.Label(self.allentries_frame, text=item[3]).grid(row=self.rowstart, column=3, sticky=tk.W, padx=10)
+            tk.Label(self.allentries_frame, text=item[4]).grid(row=self.rowstart, column=4, sticky=tk.W, padx=10)
+            tk.Label(self.allentries_frame, text=item[5]).grid(row=self.rowstart, column=5, sticky=tk.W, padx=10)
             self.rowstart += 1
 
     # Customer Page Functions
