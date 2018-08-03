@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.db" afterPath="$PROJECT_DIR$/ORDERM8.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.py" afterPath="$PROJECT_DIR$/ORDERM8.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WindowFrame.py" afterPath="$PROJECT_DIR$/WindowFrame.py" />
     </list>
     <ignored path="ORDERM8.iws" />
@@ -28,9 +27,11 @@
       <file leaf-file-name="ORDERM8.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ORDERM8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="348">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,7 +39,7 @@
       <file leaf-file-name="MenuFrame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MenuFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
+            <state relative-caret-position="30">
               <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding />
             </state>
@@ -55,13 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
                 <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
                 <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
                 <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -103,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1365">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="315">
+              <caret line="144" column="73" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -144,10 +144,10 @@
         <option value="$PROJECT_DIR$/WindowClasses/HomePageFrame.py" />
         <option value="$PROJECT_DIR$/WindowClasses/HomePageView.py" />
         <option value="$PROJECT_DIR$/MenuFrame.py" />
-        <option value="$PROJECT_DIR$/ORDERM8.py" />
         <option value="$PROJECT_DIR$/SQL_functions.py" />
         <option value="$PROJECT_DIR$/Windowframe_functions/homepage.py" />
         <option value="$PROJECT_DIR$/Windowframe_functions/new_customer_entry.py" />
+        <option value="$PROJECT_DIR$/ORDERM8.py" />
         <option value="$PROJECT_DIR$/WindowFrame.py" />
       </list>
     </option>
@@ -451,7 +451,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1422" height="873" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33405796" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -460,7 +460,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27173913" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822478" sideWeight="0.8927536" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822478" sideWeight="0.8927536" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -524,7 +524,6 @@
         <state relative-caret-position="2610">
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -579,7 +578,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +605,6 @@
         <state relative-caret-position="2625">
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -659,7 +659,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,7 +686,6 @@
         <state relative-caret-position="2610">
           <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -739,7 +740,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +767,6 @@
         <state relative-caret-position="2430">
           <caret line="163" column="24" selection-start-line="163" selection-start-column="24" selection-end-line="163" selection-end-column="24" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -819,7 +821,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -829,7 +833,6 @@
         <state relative-caret-position="375">
           <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -875,7 +878,6 @@
         <state relative-caret-position="180">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -935,7 +937,6 @@
         <state relative-caret-position="435">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -995,7 +996,6 @@
         <state relative-caret-position="570">
           <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -1049,7 +1049,6 @@
         <state relative-caret-position="450">
           <caret line="30" column="99" selection-start-line="30" selection-start-column="99" selection-end-line="30" selection-end-column="99" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -1103,7 +1102,6 @@
         <state relative-caret-position="1185">
           <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -1176,15 +1174,17 @@
     <entry file="file://$PROJECT_DIR$/Windowframe_functions/new_customer_entry.py" />
     <entry file="file://$PROJECT_DIR$/ORDERM8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="348">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MenuFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
+        <state relative-caret-position="30">
           <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
           <folding />
         </state>
@@ -1198,22 +1198,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WindowFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SQL_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="143" column="21" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
             <marker date="1528166323000" expanded="true" signature="134:155" ph="SELECT * FRO... rolodex" />
             <marker date="1528166323000" expanded="true" signature="444:464" ph="SELECT * FRO... orders" />
             <marker date="1528166323000" expanded="true" signature="993:1021" ph="INSERT INTO rolodex... " />
@@ -1250,6 +1239,16 @@
             <marker date="1528166323000" expanded="true" signature="7554:7596" ph="INSERT INTO customerprefs... " />
             <marker date="1528166323000" expanded="true" signature="7786:7818" ph="DELETE FROM " />
             <marker date="1528166323000" expanded="true" signature="7840:7887" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WindowFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="144" column="73" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

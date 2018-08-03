@@ -55,7 +55,7 @@ class WindowFrame(tk.Frame):
 
     def populate_entries(self):
         self.clear_window_frame()
-        self.allentries_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,1525))
+        self.allentries_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,2000))
         self.allentries_scroll = tk.Scrollbar(self, orient="vertical", command=self.allentries_canvas.yview)
         self.allentries_frame = tk.Frame(self)
         self.allentries_canvas.configure(yscrollcommand=self.allentries_scroll.set)
@@ -129,20 +129,28 @@ class WindowFrame(tk.Frame):
         tk.Label(self.customer_delivery_preferences_frame, text="Delivery Preferences", font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
         self.customer_delivery_preferences_textbox = tk.Text(self.customer_delivery_preferences_frame,
                                                              borderwidth=1,
+                                                             width=70,
+                                                             height=25,
                                                              highlightbackground="#D24C45")
         self.insert_delivery_preferences_onstart()
-        self.customer_delivery_preferences_textbox.grid(row=2, column=0, sticky=tk.W)
+        self.customer_delivery_preferences_textbox.grid(row=2,
+                                                        column=0,
+                                                        padx=2,
+                                                        sticky=tk.W)
         self.customer_delivery_preferences_textbox_savebutton = tk.Button(self.customer_delivery_preferences_frame,
                                                                           text="Save Preferences",
                                                                           command=self.save_customer_delivery_preferences)
         self.customer_delivery_preferences_textbox_savebutton.grid(row=3,
                                                                    column=0,
+                                                                   padx=10,
                                                                    sticky=tk.W)
         tk.Label(self.customer_food_preferences_frame,
                  text="Food Preferences",
                  font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
         self.customer_food_preferences_textbox = tk.Text(self.customer_food_preferences_frame,
                                                          borderwidth=1,
+                                                         width=70,
+                                                         height=25,
                                                          highlightbackground="#D24C45")
         self.insert_food_preferences_onstart()
         self.customer_food_preferences_textbox_savebutton = tk.Button(self.customer_food_preferences_frame,
