@@ -130,8 +130,9 @@ class WindowFrame(tk.Frame):
         tk.Label(self.customer_delivery_preferences_frame, text="Delivery Preferences", font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
         self.customer_delivery_preferences_textbox = tk.Text(self.customer_delivery_preferences_frame,
                                                              borderwidth=1,
-                                                             width=70,
+                                                             width=65,
                                                              height=25,
+                                                             wrap="word",
                                                              highlightbackground="#D24C45")
         self.insert_delivery_preferences_onstart()
         self.customer_delivery_preferences_textbox.grid(row=2,
@@ -150,8 +151,9 @@ class WindowFrame(tk.Frame):
                  font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
         self.customer_food_preferences_textbox = tk.Text(self.customer_food_preferences_frame,
                                                          borderwidth=1,
-                                                         width=70,
+                                                         width=65,
                                                          height=25,
+                                                         wrap="word",
                                                          highlightbackground="#D24C45")
         self.insert_food_preferences_onstart()
         self.customer_food_preferences_textbox_savebutton = tk.Button(self.customer_food_preferences_frame,

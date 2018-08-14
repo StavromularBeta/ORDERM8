@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homepage_support/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WindowFrame.py" afterPath="$PROJECT_DIR$/WindowFrame.py" />
     </list>
     <ignored path="ORDERM8.iws" />
@@ -109,8 +105,8 @@
       <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -1256,8 +1252,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WindowFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="345">
+          <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
