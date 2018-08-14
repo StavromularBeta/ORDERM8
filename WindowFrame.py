@@ -1,5 +1,6 @@
 import Tkinter as tk
 import SQL_functions
+from Homepage_support.HomepageFrame import generate_current_time
 
 
 class WindowFrame(tk.Frame):
@@ -15,7 +16,7 @@ class WindowFrame(tk.Frame):
 
     def home_page(self):
         self.clear_window_frame()
-        tk.Label(self, text="This is the homepage.", font=self.parent.new_cust_font).grid()
+        tk.Label(self, text=generate_current_time(), font=self.parent.new_cust_font).grid()
 
     # New Customer Entry Functions
 
