@@ -16,7 +16,7 @@ class WindowFrame(tk.Frame):
     def home_page(self):
         self.clear_window_frame()
         tk.Label(self, text=HF.generate_current_time(), font=self.parent.new_cust_font).grid(row=0)
-        tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=1)
+        tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=0, column=1)
 
     # New Customer Entry Functions
 

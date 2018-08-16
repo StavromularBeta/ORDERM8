@@ -14,17 +14,17 @@ def generate_time_until_cutoff():
     cut_off_time = current_time.replace(hour=13, minute=0, second=0)
     time_to_cutoff = cut_off_time - current_time
     if time_to_cutoff.total_seconds() <= 0:
-        cutoff_sentence = "It is past cut-off."
+        cutoff_sentence = "(Past cut-off)"
         return cutoff_sentence
     else:
         hour_until_cutoff = int(time_to_cutoff.total_seconds()) / 3600
         if hour_until_cutoff >= 1:
             minutes_until_cutoff = int((float(time_to_cutoff.total_seconds() / 3600) - float(hour_until_cutoff))*60)
-            cutoff_sentence = "There is " + str(hour_until_cutoff) + " hour and " + str(minutes_until_cutoff) + \
-                " minutes to delivery cut-off."
+            cutoff_sentence = "(" + str(hour_until_cutoff) + " hour and " + str(minutes_until_cutoff) + \
+                " minutes to delivery cut-off)"
             return cutoff_sentence
         else:
             minutes_until_cutoff = time_to_cutoff.total_seconds() / 60
-            cutoff_sentence = "There are " + str(int(minutes_until_cutoff)) + " minutes until cut-off."
+            cutoff_sentence = "(" + str(int(minutes_until_cutoff)) + " minutes until cut-off)"
             return cutoff_sentence
 
