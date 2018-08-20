@@ -254,3 +254,54 @@ def delete_customer_and_customer_records(customerID):
     c.execute('DELETE FROM rolodex WHERE id=(?)', id)
     c.execute('DELETE FROM customerprefs WHERE customer_id=(?)', id)
     conn.commit()
+
+
+# Day Duties Stuff.
+
+
+def create_day_duties_table():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    create_table = """CREATE TABLE IF NOT EXISTS day_duties (
+                      id integer PRIMARY KEY,
+                      date_of_entry DATE,
+                      day_of_week text,
+                      task text)
+                      """
+    c.execute(create_table)
+    conn.commit()
+
+
+def return_unique_day_duty_ID():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM day_duties')
+    IDs = []
+    for item in c:
+        ID = int(item[0])
+        IDs.append(ID)
+    IDs = sorted(IDs, key=int, reverse=True)
+    uniqueID = IDs[0] + 1
+    return str(uniqueID)
+
+
+def new_day_duty(date_of_entry, day_of_week, task):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    uniqueID = return_unique_day_duty_ID()
+    dutyEntry = (uniqueID, date_of_entry, day_of_week, task)
+    c.execute('INSERT INTO day_duties VALUES (?,?,?,?)', dutyEntry)
+    conn.commit()
+
+def return_all_day_duties():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM day_duties')
+    return c
+
+#Examples
+
+#new_day_duty(datetime.datetime.now(), "Wednesday", "Condense Recycling")
+
+#for item in return_all_day_duties():
+#    print item

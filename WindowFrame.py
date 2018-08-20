@@ -144,11 +144,11 @@ class WindowFrame(tk.Frame):
                                                                           command=self.save_customer_delivery_preferences)
         self.customer_delivery_preferences_textbox_savebutton.grid(row=3,
                                                                    column=0,
-                                                                   padx=10,
+                                                                   padx=2,
                                                                    sticky=tk.W)
         tk.Label(self.customer_food_preferences_frame,
                  text="Food Preferences",
-                 font=self.parent.label_cust_font).grid(row=0, column=0, sticky=tk.W)
+                 font=self.parent.label_cust_font).grid(row=0, column=0, padx=5, sticky=tk.W)
         self.customer_food_preferences_textbox = tk.Text(self.customer_food_preferences_frame,
                                                          borderwidth=1,
                                                          width=65,
@@ -159,8 +159,8 @@ class WindowFrame(tk.Frame):
         self.customer_food_preferences_textbox_savebutton = tk.Button(self.customer_food_preferences_frame,
                                                                       text="Save Preferences",
                                                                       command=self.save_customer_food_preferences)
-        self.customer_food_preferences_textbox_savebutton.grid(row=3, column=0, sticky=tk.W)
-        self.customer_food_preferences_textbox.grid(row=1, column=0, sticky=tk.W)
+        self.customer_food_preferences_textbox_savebutton.grid(row=3, column=0, padx=5, sticky=tk.W)
+        self.customer_food_preferences_textbox.grid(row=1, column=0, padx=5, sticky=tk.W)
         self.delete_current_customer_button = tk.Button(self.customer_information_frame,
                                                         text="Delete Customer",
                                                         command=self.delete_current_customer)
