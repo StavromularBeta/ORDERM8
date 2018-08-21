@@ -1,4 +1,10 @@
 import datetime
+import os, sys, inspect
+#below 3 lines add the parent directory to the path, so that SQL_functions can be found.
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,parentdir)
+import SQL_functions as sq
 
 
 def generate_current_time():
@@ -28,5 +34,21 @@ def generate_time_until_cutoff():
             cutoff_sentence = "(" + str(int(minutes_until_cutoff)) + "m to cut-off)"
             return cutoff_sentence
 
+
+def generate_tasks_for_day():
+    current_day = datetime.datetime.today().weekday()
+    daydict = {
+        0: "Monday",
+        1: "Tuesday",
+        2: "Wednesday",
+        3: "Thursday",
+        4: "Friday"
+    }
+    current_day = daydict[current_day]
+    tasks = sq.search_by_day_of_week(current_day)
+    taskdict = {}
+    for item in tasks:
+        taskdict[item[0]] = item[3]
+    return taskdict.items()
 
 

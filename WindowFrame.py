@@ -15,8 +15,17 @@ class WindowFrame(tk.Frame):
 
     def home_page(self):
         self.clear_window_frame()
-        tk.Label(self, text=HF.generate_current_time(), font=self.parent.new_cust_font).grid(row=0)
+        tk.Label(self, text=HF.generate_current_time(), font=self.parent.new_cust_font).grid(row=0, padx=2)
         tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=0, column=1)
+        tk.Label(self, text="Daily Tasks", font=self.parent.new_cust_font).grid(row=1, padx=2, pady=2, sticky=tk.W)
+        self.generate_labels_for_daily_tasks()
+
+    def generate_labels_for_daily_tasks(self):
+        startrow = 2
+        daily_tasks = HF.generate_tasks_for_day()
+        for item in daily_tasks:
+            tk.Label(self, text=" - " + item[1]).grid(row=startrow, padx=2, sticky=tk.W)
+            startrow += 1
 
     # New Customer Entry Functions
 

@@ -293,10 +293,19 @@ def new_day_duty(date_of_entry, day_of_week, task):
     c.execute('INSERT INTO day_duties VALUES (?,?,?,?)', dutyEntry)
     conn.commit()
 
+
 def return_all_day_duties():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     c.execute('SELECT * FROM day_duties')
+    return c
+
+
+def search_by_day_of_week(day_of_week):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    day_of_week = (day_of_week,)
+    c.execute('''SELECT * FROM day_duties WHERE day_of_week = (?)''', day_of_week)
     return c
 
 #Examples
