@@ -308,9 +308,9 @@ def search_by_day_of_week(day_of_week):
     c.execute('''SELECT * FROM day_duties WHERE day_of_week = (?)''', day_of_week)
     return c
 
-#Examples
+# Examples
 
-#new_day_duty(datetime.datetime.now(), "Wednesday", "Condense Recycling")
+# new_day_duty(datetime.datetime.now(), "Wednesday", "Condense Recycling")
 
-#for item in return_all_day_duties():
-#    print item
+# for item in return_all_day_duties():
+#     print item
