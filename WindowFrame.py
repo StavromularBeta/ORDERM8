@@ -76,10 +76,10 @@ class WindowFrame(tk.Frame):
                       text="ADD",
                       width=4,
                       height=2,
-                      command=lambda i=customer_entry: self.customer_page(customer_entry)).grid(row=rowstart,
-                                                                                                column=0,
-                                                                                                sticky=tk.W,
-                                                                                                padx=10)
+                      command=lambda i=customer_entry: HF.enter_customer_into_daily(customer_entry[0])).grid(row=rowstart,
+                                                                                                             column=0,
+                                                                                                             sticky=tk.W,
+                                                                                                             padx=10)
             tk.Label(self.search_result_frame, text=customer_entry[1]).grid(row=rowstart,
                                                                             column=1,
                                                                             sticky=tk.W,

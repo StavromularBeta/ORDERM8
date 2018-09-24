@@ -314,3 +314,54 @@ def search_by_day_of_week(day_of_week):
 
 # for item in return_all_day_duties():
 #     print item
+
+
+def delete_daily_customer_entrys():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('''DELETE FROM daily_customers WHERE id=8''')
+    conn.commit()
+
+
+def return_unique_daily_customer_entry_id():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM daily_customers')
+    IDs = []
+    for item in c:
+        ID = int(item[0])
+        IDs.append(ID)
+    IDs = sorted(IDs, key=int, reverse=True)
+    uniqueID = IDs[0] + 1
+    return str(uniqueID)
+
+
+def create_daily_customers_table():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    create_table = """CREATE TABLE daily_customers (
+                      id integer PRIMARY KEY,
+                      custid SMALLINT,
+                      todays_date DATE)
+                      """
+    c.execute(create_table)
+    conn.commit()
+
+
+def new_daily_customer(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    uniqueID = return_unique_daily_customer_entry_id()
+    dutyEntry = (uniqueID, customer_id, datetime.datetime.now())
+    c.execute('INSERT INTO daily_customers VALUES (?,?,?)', dutyEntry)
+    conn.commit()
+
+
+def return_all_daily_customer_entries():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM daily_customers')
+    return c
+
+for item in return_all_daily_customer_entries():
+    print item

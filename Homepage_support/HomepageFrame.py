@@ -54,4 +54,11 @@ def generate_tasks_for_day():
     return taskdict.items()
 
 
+def enter_customer_into_daily(customer_information):
+    sq.new_daily_customer(customer_information)
+
+def get_todays_current_customers():
+
+
+
 
