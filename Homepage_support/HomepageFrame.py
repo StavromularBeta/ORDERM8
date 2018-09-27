@@ -57,8 +57,18 @@ def generate_tasks_for_day():
 def enter_customer_into_daily(customer_information):
     sq.new_daily_customer(customer_information)
 
-def get_todays_current_customers():
 
+
+def get_todays_current_customers():
+    todays_customers = sq.return_all_daily_customer_entries()
+    customer_list = []
+    for item in todays_customers:
+        customer_id = item[1]
+        customer = sq.search_by_customer_id(customer_id)
+        for otheritem in customer:
+            name = otheritem[1] + " " + otheritem[2]
+        customer_list.append(name)
+    return customer_list
 
 
 

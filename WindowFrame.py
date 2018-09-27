@@ -18,10 +18,14 @@ class WindowFrame(tk.Frame):
         self.clear_window_frame()
         tk.Label(self, text=HF.generate_current_time(), font=self.parent.new_cust_font).grid(row=0, padx=2)
         tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=0, column=1)
-        tk.Label(self, text="Daily Tasks", font=self.parent.new_cust_font).grid(row=1, padx=2, pady=2, sticky=tk.W)
+        tk.Label(self, text="Tasks", font=self.parent.new_cust_font).grid(row=1, padx=2, pady=2, sticky=tk.W)
         startrow = self.generate_labels_for_daily_tasks() + 1
-        tk.Label(self, text="Daily Customers", font=self.parent.new_cust_font).grid(row=startrow, padx=2, pady=2, sticky=tk.W)
+        tk.Label(self, text="Current Customers", font=self.parent.new_cust_font).grid(row=startrow,
+                                                                                      padx=2,
+                                                                                      pady=2,
+                                                                                      sticky=tk.W)
         self.generate_customer_simple_lookup(startrow)
+        self.generate_labels_for_daily_customers(startrow)
 
     def generate_labels_for_daily_tasks(self):
         startrow = 2
@@ -76,10 +80,10 @@ class WindowFrame(tk.Frame):
                       text="ADD",
                       width=4,
                       height=2,
-                      command=lambda i=customer_entry: HF.enter_customer_into_daily(customer_entry[0])).grid(row=rowstart,
-                                                                                                             column=0,
-                                                                                                             sticky=tk.W,
-                                                                                                             padx=10)
+                      command=lambda i=customer_entry: self.enter_customer_and_refresh_homepage(customer_entry)).grid(row=rowstart,
+                                                                                                                      column=0,
+                                                                                                                      sticky=tk.W,
+                                                                                                                      padx=10)
             tk.Label(self.search_result_frame, text=customer_entry[1]).grid(row=rowstart,
                                                                             column=1,
                                                                             sticky=tk.W,
@@ -89,6 +93,24 @@ class WindowFrame(tk.Frame):
                                                                             sticky=tk.W,
                                                                             padx=10)
             rowstart += 1
+
+    def generate_labels_for_daily_customers(self, startrow):
+        customer_list = HF.get_todays_current_customers()
+        self.active_customer_frame = tk.Frame(self)
+        self.active_customer_frame.grid(row=startrow+3, column=0, sticky=tk.W)
+        tk.Label(self.active_customer_frame, text="Today's Active Customers", font=self.parent.label_cust_font).grid(row=0,
+                                                                                                                     column=0,
+                                                                                                                     sticky= tk.W)
+        active_customer_row_counter = 1
+        for item in customer_list:
+            tk.Label(self.active_customer_frame, text=item).grid(row=active_customer_row_counter, column=0, sticky=tk.W)
+            active_customer_row_counter += 1
+
+    def enter_customer_and_refresh_homepage(self, customer_id):
+        HF.enter_customer_into_daily(customer_id[0])
+        self.home_page()
+
+
 
     # New Customer Entry Functions
 

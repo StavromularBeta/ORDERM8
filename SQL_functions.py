@@ -125,6 +125,14 @@ def create_rolodex_table():
     conn.commit()
 
 
+def search_by_customer_id(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_id = (customer_id,)
+    c.execute('''SELECT * FROM rolodex WHERE id = (?)''', customer_id)
+    return c
+
+
 def search_by_customer_first_name(customer_name):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -352,7 +360,7 @@ def new_daily_customer(customer_id):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     uniqueID = return_unique_daily_customer_entry_id()
-    dutyEntry = (uniqueID, customer_id, datetime.datetime.now())
+    dutyEntry = (uniqueID, customer_id, datetime.date.today(),)
     c.execute('INSERT INTO daily_customers VALUES (?,?,?)', dutyEntry)
     conn.commit()
 
@@ -360,8 +368,6 @@ def new_daily_customer(customer_id):
 def return_all_daily_customer_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    c.execute('SELECT * FROM daily_customers')
+    date = (datetime.date.today(),)
+    c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
-
-for item in return_all_daily_customer_entries():
-    print item
