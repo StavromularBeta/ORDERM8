@@ -9,3 +9,4 @@ ORDERM8 also currently has daily customer tracking amd daily task tracking on th
 
 the purpose of this version of ORDERM8 is to quickly and roughly try new features. Once a robust set of features is developed in concept, they will be put together in a better organized, and nicer looking, ORDERM8 V2.
 
+To run ORDERM8, navigate to the main ORDERM8 directory and run ORDERM8.py.
