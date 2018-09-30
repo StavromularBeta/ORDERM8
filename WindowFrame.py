@@ -75,20 +75,20 @@ class WindowFrame(tk.Frame):
                                                                                                sticky=tk.W,
                                                                                                padx=10)
         rowstart = 1
-        for customer_entry in search_results:
+        for self.customer_entry in search_results:
             tk.Button(self.search_result_frame,
                       text="ADD",
                       width=4,
                       height=2,
-                      command=lambda i=customer_entry: self.enter_customer_and_refresh_homepage(customer_entry)).grid(row=rowstart,
+                      command=lambda i=self.customer_entry: self.enter_customer_and_refresh_homepage(i)).grid(row=rowstart,
                                                                                                                       column=0,
                                                                                                                       sticky=tk.W,
                                                                                                                       padx=10)
-            tk.Label(self.search_result_frame, text=customer_entry[1]).grid(row=rowstart,
+            tk.Label(self.search_result_frame, text=self.customer_entry[1]).grid(row=rowstart,
                                                                             column=1,
                                                                             sticky=tk.W,
                                                                             padx=10)
-            tk.Label(self.search_result_frame, text=customer_entry[2]).grid(row=rowstart,
+            tk.Label(self.search_result_frame, text=self.customer_entry[2]).grid(row=rowstart,
                                                                             column=2,
                                                                             sticky=tk.W,
                                                                             padx=10)
@@ -349,7 +349,7 @@ class WindowFrame(tk.Frame):
                       text="GO",
                       width=4,
                       height=2,
-                      command=lambda i=customer_entry: self.customer_page(customer_entry)).grid(row=rowstart,
+                      command=lambda i=customer_entry: self.customer_page(i)).grid(row=rowstart,
                                                                                                 column=0,
                                                                                                 sticky=tk.W,
                                                                                                 padx=10)

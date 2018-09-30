@@ -324,10 +324,11 @@ def search_by_day_of_week(day_of_week):
 #     print item
 
 
-def delete_daily_customer_entrys():
+def delete_daily_customer_entrys(custid):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    c.execute('''DELETE FROM daily_customers WHERE id=8''')
+    customer_id = (custid,)
+    c.execute('''DELETE FROM daily_customers WHERE id=(?)''',customer_id)
     conn.commit()
 
 
@@ -371,3 +372,11 @@ def return_all_daily_customer_entries():
     date = (datetime.date.today(),)
     c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
+
+#for item in return_all_daily_customer_entries():
+#    print item
+
+#for item in range(0,15):
+#    delete_daily_customer_entrys(item)
+
+
