@@ -379,4 +379,20 @@ def return_all_daily_customer_entries():
 #for item in range(0,15):
 #    delete_daily_customer_entrys(item)
 
+# Select * into ORDERM8_update.dbo.rolodex from ORDERM8.dbo.rolodex
 
+# Select * into ORDERM8_update.dbo.customerprefs from ORDERM8.dbo.customerprefs
+
+
+def create_test_empty_db():
+    conn = sqlite3.connect("ORDERM8_test.db")
+    conn.close()
+
+
+def copy_table_db_to_db():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute("ATTACH 'ORDERM8_test.db' AS test")
+    c.execute("INSERT INTO 'TEST.db.rolodex' SELECT * FROM 'ORDERM8.db.rolodex'")
+
+#copy_table_db_to_db()
