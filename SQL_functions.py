@@ -324,6 +324,8 @@ def search_by_day_of_week(day_of_week):
 #     print item
 
 
+# DAILY CUSTOMER ENTRIES
+
 def delete_daily_customer_entrys(custid):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -373,15 +375,17 @@ def return_all_daily_customer_entries():
     c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
 
-#for item in return_all_daily_customer_entries():
+# for messing around with daily customer entries
+
+# for item in return_all_daily_customer_entries():
 #    print item
 
-#for item in range(0,15):
+# for item in range(0,15):
 #    delete_daily_customer_entrys(item)
 
-# Select * into ORDERM8_update.dbo.rolodex from ORDERM8.dbo.rolodex
 
-# Select * into ORDERM8_update.dbo.customerprefs from ORDERM8.dbo.customerprefs
+# FOR COPYING ROLODEX AND CUSTOMERPREFS FROM PEPS DB TO NEW DB
+# will have to delete all entries on the new db in customerprefs and rolodex for this to work.
 
 
 def create_test_empty_db():
@@ -390,9 +394,14 @@ def create_test_empty_db():
 
 
 def copy_table_db_to_db():
-    conn = sqlite3.connect("ORDERM8.db")
+    conn = sqlite3.connect("ORDERM8_test.db")#newdb
     c = conn.cursor()
-    c.execute("ATTACH 'ORDERM8_test.db' AS test")
-    c.execute("INSERT INTO 'TEST.db.rolodex' SELECT * FROM 'ORDERM8.db.rolodex'")
+    c.execute("ATTACH 'ORDERM8.db' AS test")#pepsdb
+    c.execute("INSERT INTO rolodex SELECT * FROM test.rolodex")
+    conn.commit()
 
-#copy_table_db_to_db()
+# create_test_empty_db()
+# create_rolodex_table()
+
+# will only need this function once rolodex and customerprefs are cleared out.
+# copy_table_db_to_db()
