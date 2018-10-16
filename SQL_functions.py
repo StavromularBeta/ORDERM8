@@ -405,3 +405,11 @@ def copy_table_db_to_db():
 
 # will only need this function once rolodex and customerprefs are cleared out.
 # copy_table_db_to_db()
+
+
+def select_recent_activity(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_id_tuple = (customer_id,)
+    c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
+    return c

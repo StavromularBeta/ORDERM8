@@ -262,9 +262,21 @@ class WindowFrame(tk.Frame):
         self.recent_customer_orders_frame = tk.Frame(self)
         self.recent_customer_orders_frame.grid(row=3, column=0, padx=2, sticky=tk.W)
         tk.Label(self.recent_customer_orders_frame,
-                 text="Customer Orders",
+                 text="Past Customer Orders",
                  font=self.parent.label_cust_font,
                  ).grid(row=0, column=0, padx=2, sticky=tk.W)
+        self.past_customer_orders(customer_entry[0])
+
+    def past_customer_orders(self, customer_id):
+        #just all orders for now.
+        all_customer_orders = SQL_functions.select_recent_activity(customer_id)
+        rowstart = 1
+        for item in all_customer_orders:
+            tk.Label(self.recent_customer_orders_frame, text=item[2]).grid(row=rowstart,
+                                                                           column=0,
+                                                                           padx=2,
+                                                                           sticky=tk.W)
+            rowstart += 1
 
     def delete_current_customer(self):
         SQL_functions.delete_customer_and_customer_records(self.current_customer_entry[0])
