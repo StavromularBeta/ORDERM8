@@ -1,17 +1,10 @@
 from createtb import CreateTb
 from dbviews import DbViews
 from addel import AdDel
+from selection import Selection
 
-NewCreate = CreateTb()
-NewCreate.create_table(1)
-NewCreate.create_table(2)
-NewCreate.create_table(3)
-NewCreate.create_table(4)
-NewCreate.create_table(5)
-
-NewDelete = AdDel()
-NewDelete.delete_table(1)
-
-NewView = DbViews()
-for item in NewView.master_table_query():
-    print item[1]
+Rolodex_entry = AdDel()
+Rolodex_selection = Selection()
+#fake_entry = ["6", "a", "b", "1", "abc", "cash", True, "online"]
+#Rolodex_entry.new_rolodex_entry(fake_entry)
+Rolodex_selection.select_all_from_table(1, True)

@@ -15,8 +15,6 @@ class Connector(object):
         db_connection = sqlite3.connect(self.database_target)
         cursor = db_connection.cursor()
         if arguments:
-            print query
-            print arguments
             cursor.execute(query, arguments)
         else:
             cursor.execute(query)
