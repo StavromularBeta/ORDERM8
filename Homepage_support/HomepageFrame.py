@@ -58,7 +58,6 @@ def enter_customer_into_daily(customer_information):
     sq.new_daily_customer(customer_information)
 
 
-
 def get_todays_current_customers():
     todays_customers = sq.return_all_daily_customer_entries()
     customer_list = []
@@ -69,6 +68,8 @@ def get_todays_current_customers():
             name = otheritem[1] + " " + otheritem[2]
         customer_list.append(name)
     return customer_list
+
+
 
 
 

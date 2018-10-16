@@ -259,6 +259,12 @@ class WindowFrame(tk.Frame):
                                                         text="Delete Customer",
                                                         command=self.delete_current_customer)
         self.delete_current_customer_button.grid(row=0, column=2, sticky=tk.E)
+        self.recent_customer_orders_frame = tk.Frame(self)
+        self.recent_customer_orders_frame.grid(row=3, column=0, padx=2, sticky=tk.W)
+        tk.Label(self.recent_customer_orders_frame,
+                 text="Customer Orders",
+                 font=self.parent.label_cust_font,
+                 ).grid(row=0, column=0, padx=2, sticky=tk.W)
 
     def delete_current_customer(self):
         SQL_functions.delete_customer_and_customer_records(self.current_customer_entry[0])
