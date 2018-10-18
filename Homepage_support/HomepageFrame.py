@@ -6,6 +6,13 @@ parentdir = os.path.dirname(currentdir)
 sys.path.insert(0,parentdir)
 import SQL_functions as sq
 
+# matplotlib stuff
+
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.figure import Figure
+
 
 def generate_current_time():
     current_time = datetime.datetime.now()
@@ -68,6 +75,15 @@ def get_todays_current_customers():
             name = otheritem[1] + " " + otheritem[2]
         customer_list.append(name)
     return customer_list
+
+
+def create_weekly_customer_figure(tk_frame):
+    f = Figure(figsize=(5,5), dpi=100)
+    a = f.add_subplot(111)
+    a.plot([1,2,3,4,5,6,7,8], [5,6,1,3,8,9,3,5])
+    canvas = FigureCanvasTkAgg(f, tk_frame)
+    canvas.show()
+    return canvas
 
 
 

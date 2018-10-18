@@ -4,7 +4,6 @@ import sqlite3
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0,parentdir)
-database_target = parentdir + "/database_files/ORDERM8V2.db"
 
 
 class Connector(object):
@@ -20,6 +19,7 @@ class Connector(object):
             cursor.execute(query)
         db_connection.commit()
         returned_query = cursor
+        db_connection.close()
         return returned_query
 
 

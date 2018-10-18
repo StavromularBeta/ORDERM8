@@ -17,8 +17,10 @@ class WindowFrame(tk.Frame):
     def home_page(self):
         self.clear_window_frame()
         tk.Label(self, text=HF.generate_current_time(), font=self.parent.new_cust_font).grid(row=0, padx=2)
-        tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=0, column=1)
-        tk.Label(self, text="Tasks", font=self.parent.new_cust_font).grid(row=1, padx=2, pady=2, sticky=tk.W)
+        tk.Label(self, text=HF.generate_time_until_cutoff(), font=self.parent.new_cust_font).grid(row=0,
+                                                                                                  column=1,
+                                                                                                  sticky=tk.W)
+        tk.Label(self, text="Tasks", font=self.parent.new_cust_font).grid(row=1, padx=2, pady=2, sticky=tk.NW)
         startrow = self.generate_labels_for_daily_tasks() + 1
         tk.Label(self, text="Current Customers", font=self.parent.new_cust_font).grid(row=startrow,
                                                                                       padx=2,
@@ -26,6 +28,8 @@ class WindowFrame(tk.Frame):
                                                                                       sticky=tk.W)
         self.generate_customer_simple_lookup(startrow)
         self.generate_labels_for_daily_customers(startrow)
+        canvas_and_toolbar = HF.create_weekly_customer_figure(self)
+        canvas_and_toolbar.get_tk_widget().grid(row=1, column=1, rowspan=15, sticky=tk.W)
 
     def generate_labels_for_daily_tasks(self):
         startrow = 2
