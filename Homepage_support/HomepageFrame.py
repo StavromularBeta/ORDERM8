@@ -80,7 +80,8 @@ def get_todays_current_customers():
 def create_weekly_customer_figure(tk_frame):
     f = Figure(figsize=(5,5), dpi=100)
     a = f.add_subplot(111)
-    a.plot([1,2,3,4,5,6,7,8], [5,6,1,3,8,9,3,5])
+    wgd = sq.weekly_graph_data()
+    a.plot([1, 2, 3, 4, 5], [wgd[0], wgd[1], wgd[2], wgd[3], wgd[4]])
     canvas = FigureCanvasTkAgg(f, tk_frame)
     canvas.show()
     return canvas

@@ -1,5 +1,6 @@
 import sqlite3
 import datetime
+from collections import Counter
 
 def return_unique_ID():
     conn = sqlite3.connect("ORDERM8.db")
@@ -375,6 +376,40 @@ def return_all_daily_customer_entries():
     c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
 
+
+def weekly_graph_data():
+    entries = return_this_weeks_customer_entries()
+    daycount = enumerate_this_weeks_customer_entries(entries)
+    week_dictionary = {0:0, 1:0, 2:0, 3:0, 4:0, 5:0}
+    for key, value in daycount.items():
+        if key in week_dictionary:
+            week_dictionary[key] = value
+        else:
+            pass
+    return week_dictionary
+
+
+def return_this_weeks_customer_entries():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    today_date = (datetime.date.today(),)
+    week_start = today_date[0] - datetime.timedelta(days=today_date[0].weekday())
+    week_end = week_start + datetime.timedelta(days=4)
+    week_tuple = (week_start, week_end,)
+    c.execute('SELECT * FROM daily_customers WHERE todays_date BETWEEN (?) and (?)', week_tuple)
+    return c
+
+
+def enumerate_this_weeks_customer_entries(customer_entries):
+    dates = []
+    for item in customer_entries:
+            dates.append(item[2])
+    days = []
+    for item in dates:
+        days.append(datetime.datetime.strptime(item, "%Y-%m-%d").weekday())
+    return Counter(days)
+
+
 # for messing around with daily customer entries
 
 # for item in return_all_daily_customer_entries():
@@ -414,5 +449,4 @@ def select_recent_activity(customer_id):
     c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
     return c
 
-for item in range(13, 16):
-    delete_daily_customer_entrys(item)
+print weekly_graph_data()
