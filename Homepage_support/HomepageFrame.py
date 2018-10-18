@@ -9,6 +9,7 @@ import SQL_functions as sq
 # matplotlib stuff
 
 import matplotlib
+import numpy as np
 matplotlib.use("TkAgg")
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
 from matplotlib.figure import Figure
@@ -78,10 +79,22 @@ def get_todays_current_customers():
 
 
 def create_weekly_customer_figure(tk_frame):
-    f = Figure(figsize=(5,5), dpi=100)
-    a = f.add_subplot(111)
+    f = Figure(figsize=(4,4), dpi=100)
+    ax = f.add_subplot(111)
     wgd = sq.weekly_graph_data()
-    a.plot([1, 2, 3, 4, 5], [wgd[0], wgd[1], wgd[2], wgd[3], wgd[4]])
+    x_labels = np.array(["M", "T", "W", "Th", "F"])
+    y_axis = np.array([wgd[0], wgd[1], wgd[2], wgd[3], wgd[4]])
+    w = 3
+    nitems = len(y_axis)
+    x_axis = np.arange(0, nitems*w, w)
+    ax.bar(x_axis, y_axis, width=w, align='center',)
+    ax.set_xticks(x_axis)
+    ax.set_yticks(np.arange(0, nitems+1, 1))
+    ax.set_xticklabels(x_labels)
+    ax.set_ylabel('Deliveries')
+    ax.set_xlabel('Weekday')
+    ax.set_title("This Week's Deliveries")
+    f.tight_layout()
     canvas = FigureCanvasTkAgg(f, tk_frame)
     canvas.show()
     return canvas
