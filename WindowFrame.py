@@ -416,3 +416,12 @@ class WindowFrame(tk.Frame):
         order = self.order_sheet.get(1.0, tk.END)
         customer_id = 1
         SQL_functions.input_new_order(customer_id, order)
+
+    # Graphs Functions
+
+    def graphs_page(self):
+        self.clear_window_frame()
+        self.graphs_label = tk.Label(self, text="Graphs", font=self.parent.new_cust_font)
+        self.graphs_label.grid(row=0,column=0)
+        canvas_and_toolbar = HF.create_weekly_customer_figure(self)
+        canvas_and_toolbar.get_tk_widget().grid(row=1, column=0, rowspan=15, padx=10, sticky=tk.W)

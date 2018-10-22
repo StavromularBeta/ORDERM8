@@ -448,5 +448,3 @@ def select_recent_activity(customer_id):
     customer_id_tuple = (customer_id,)
     c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
     return c
-
-print weekly_graph_data()
