@@ -5,6 +5,7 @@ currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfram
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0,parentdir)
 import SQL_functions as sq
+import operator
 
 # matplotlib stuff
 
@@ -79,17 +80,17 @@ def get_todays_current_customers():
 
 
 def create_weekly_customer_figure(tk_frame):
-    f = Figure(figsize=(4,4), dpi=100)
+    f = Figure(figsize=(3,3), dpi=100)
     ax = f.add_subplot(111)
     wgd = sq.weekly_graph_data()
     x_labels = np.array(["M", "T", "W", "Th", "F"])
     y_axis = np.array([wgd[0], wgd[1], wgd[2], wgd[3], wgd[4]])
-    w = 3
+    w = 5
     nitems = len(y_axis)
     x_axis = np.arange(0, nitems*w, w)
-    ax.bar(x_axis, y_axis, width=w, align='center',)
+    ax.bar(x_axis, y_axis, width=3, align='center',)
     ax.set_xticks(x_axis)
-    ax.set_yticks(np.arange(0, nitems+1, 1))
+    ax.set_yticks(np.arange(0, 11, 1))
     ax.set_xticklabels(x_labels)
     ax.set_ylabel('Deliveries')
     ax.set_xlabel('Weekday')
@@ -100,6 +101,25 @@ def create_weekly_customer_figure(tk_frame):
     return canvas
 
 
-
+def create_monthly_customer_figure(tk_frame):
+    f = Figure(figsize=(9, 3), dpi=100)
+    ax = f.add_subplot(111)
+    mgd = sq.monthly_graph_data()
+    last_day = max(mgd.iteritems(), key=operator.itemgetter(0))[0]
+    x_axis = np.arange(1, last_day+1, 1)
+    y_axis = []
+    for item in mgd.iteritems():
+        y_axis.append(item[1])
+    y_axis = np.array(y_axis)
+    ax.bar(x_axis,y_axis, width=0.8, align='center')
+    ax.set_xticks(x_axis)
+    ax.set_yticks(np.arange(0,11,1))
+    ax.set_ylabel('Deliveries')
+    ax.set_xlabel('Day of Month')
+    ax.set_title("This Month's Deliveries")
+    f.tight_layout()
+    canvas = FigureCanvasTkAgg(f, tk_frame)
+    canvas.show()
+    return canvas
 
 

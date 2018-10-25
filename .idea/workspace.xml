@@ -4,7 +4,7 @@
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ORDERM8.db" afterPath="$PROJECT_DIR$/ORDERM8.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MenuFrame.py" afterPath="$PROJECT_DIR$/MenuFrame.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" afterPath="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQL_functions.py" afterPath="$PROJECT_DIR$/SQL_functions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WindowFrame.py" afterPath="$PROJECT_DIR$/WindowFrame.py" />
     </list>
@@ -30,50 +30,52 @@
       <file leaf-file-name="SQL_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6390">
-              <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="490" column="12" selection-start-line="490" selection-start-column="12" selection-end-line="490" selection-end-column="12" />
               <folding>
-                <marker date="1540078098000" expanded="true" signature="166:187" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="476:496" ph="SELECT * FRO... orders" />
-                <marker date="1540078098000" expanded="true" signature="1025:1065" ph="INSERT INTO rolodex... " />
-                <marker date="1540078098000" expanded="true" signature="1206:1227" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="1349:1370" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="1564:1596" ph="DELETE FROM " />
-                <marker date="1540078098000" expanded="true" signature="2289:2369" ph="UPDATE rolod... " />
-                <marker date="1540078098000" expanded="true" signature="2572:2659" ph="UPDATE rolod... " />
-                <marker date="1540078098000" expanded="true" signature="2858:2941" ph="UPDATE rolod... " />
-                <marker date="1540078098000" expanded="true" signature="3142:3227" ph="UPDATE rolod... " />
-                <marker date="1540078098000" expanded="true" signature="3372:3645" ph="CREATE TABLE... IF" />
-                <marker date="1540078098000" expanded="true" signature="3873:3909" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="4109:4153" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="4353:4396" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="4623:4669" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="4824:5007" ph="CREATE TABLE... orders" />
-                <marker date="1540078098000" expanded="true" signature="5201:5412" ph="CREATE TABLE... IF" />
-                <marker date="1540078098000" expanded="true" signature="5772:5814" ph="INSERT INTO customerprefs... " />
-                <marker date="1540078098000" expanded="true" signature="5969:5996" ph="SELECT * FRO... customerprefs" />
-                <marker date="1540078098000" expanded="true" signature="6409:6444" ph="INSERT INTO orders... " />
-                <marker date="1540078098000" expanded="true" signature="6836:6863" ph="SELECT * FRO... customerprefs" />
-                <marker date="1540078098000" expanded="true" signature="7041:7133" ph="SELECT * FRO... customerprefs" />
-                <marker date="1540078098000" expanded="true" signature="7366:7458" ph="SELECT * FRO... customerprefs" />
-                <marker date="1540078098000" expanded="true" signature="7808:7850" ph="INSERT INTO customerprefs... " />
-                <marker date="1540078098000" expanded="true" signature="8040:8072" ph="DELETE FROM " />
-                <marker date="1540078098000" expanded="true" signature="8094:8141" ph="DELETE FROM " />
-                <marker date="1540078098000" expanded="true" signature="8306:8506" ph="CREATE TABLE... IF" />
-                <marker date="1540078098000" expanded="true" signature="8692:8716" ph="SELECT * FRO... day_duties" />
-                <marker date="1540078098000" expanded="true" signature="9132:9171" ph="INSERT INTO day_duties... " />
-                <marker date="1540078098000" expanded="true" signature="9312:9336" ph="SELECT * FRO... day_duties" />
-                <marker date="1540078098000" expanded="true" signature="9507:9555" ph="SELECT * FRO... day_duties" />
-                <marker date="1540078098000" expanded="true" signature="9915:9955" ph="DELETE FROM " />
-                <marker date="1540078098000" expanded="true" signature="10112:10141" ph="SELECT * FRO... daily_customers" />
-                <marker date="1540078098000" expanded="true" signature="10444:10599" ph="CREATE TABLE... daily_customers" />
-                <marker date="1540078098000" expanded="true" signature="10908:10950" ph="INSERT INTO daily_customers... " />
-                <marker date="1540078098000" expanded="true" signature="11139:11190" ph="SELECT * FRO... daily_customers" />
-                <marker date="1540078098000" expanded="true" signature="11921:11988" ph="SELECT * FRO... daily_customers" />
-                <marker date="1540078098000" expanded="true" signature="12858:12885" ph="ATTACH 'ORDE... test" />
-                <marker date="1540078098000" expanded="true" signature="12910:12956" ph="INSERT INTO rolodex... " />
-                <marker date="1540078098000" expanded="true" signature="12930:12956" ph="SELECT * FRO... rolodex" />
-                <marker date="1540078098000" expanded="true" signature="13292:13338" ph="SELECT * FRO... daily_customers" />
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1540488696000" expanded="true" signature="182:203" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="492:512" ph="SELECT * FRO... orders" />
+                <marker date="1540488696000" expanded="true" signature="1041:1081" ph="INSERT INTO rolodex... " />
+                <marker date="1540488696000" expanded="true" signature="1222:1243" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="1365:1386" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="1580:1612" ph="DELETE FROM " />
+                <marker date="1540488696000" expanded="true" signature="2305:2385" ph="UPDATE rolod... " />
+                <marker date="1540488696000" expanded="true" signature="2588:2675" ph="UPDATE rolod... " />
+                <marker date="1540488696000" expanded="true" signature="2874:2957" ph="UPDATE rolod... " />
+                <marker date="1540488696000" expanded="true" signature="3158:3243" ph="UPDATE rolod... " />
+                <marker date="1540488696000" expanded="true" signature="3388:3661" ph="CREATE TABLE... IF" />
+                <marker date="1540488696000" expanded="true" signature="3889:3925" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="4125:4169" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="4369:4412" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="4639:4685" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="4840:5023" ph="CREATE TABLE... orders" />
+                <marker date="1540488696000" expanded="true" signature="5217:5428" ph="CREATE TABLE... IF" />
+                <marker date="1540488696000" expanded="true" signature="5788:5830" ph="INSERT INTO customerprefs... " />
+                <marker date="1540488696000" expanded="true" signature="5985:6012" ph="SELECT * FRO... customerprefs" />
+                <marker date="1540488696000" expanded="true" signature="6425:6460" ph="INSERT INTO orders... " />
+                <marker date="1540488696000" expanded="true" signature="6852:6879" ph="SELECT * FRO... customerprefs" />
+                <marker date="1540488696000" expanded="true" signature="7057:7149" ph="SELECT * FRO... customerprefs" />
+                <marker date="1540488696000" expanded="true" signature="7382:7474" ph="SELECT * FRO... customerprefs" />
+                <marker date="1540488696000" expanded="true" signature="7824:7866" ph="INSERT INTO customerprefs... " />
+                <marker date="1540488696000" expanded="true" signature="8056:8088" ph="DELETE FROM " />
+                <marker date="1540488696000" expanded="true" signature="8110:8157" ph="DELETE FROM " />
+                <marker date="1540488696000" expanded="true" signature="8322:8522" ph="CREATE TABLE... IF" />
+                <marker date="1540488696000" expanded="true" signature="8708:8732" ph="SELECT * FRO... day_duties" />
+                <marker date="1540488696000" expanded="true" signature="9148:9187" ph="INSERT INTO day_duties... " />
+                <marker date="1540488696000" expanded="true" signature="9328:9352" ph="SELECT * FRO... day_duties" />
+                <marker date="1540488696000" expanded="true" signature="9523:9571" ph="SELECT * FRO... day_duties" />
+                <marker date="1540488696000" expanded="true" signature="9931:9971" ph="DELETE FROM " />
+                <marker date="1540488696000" expanded="true" signature="10128:10157" ph="SELECT * FRO... daily_customers" />
+                <marker date="1540488696000" expanded="true" signature="10460:10615" ph="CREATE TABLE... daily_customers" />
+                <marker date="1540488696000" expanded="true" signature="10924:10966" ph="INSERT INTO daily_customers... " />
+                <marker date="1540488696000" expanded="true" signature="11155:11206" ph="SELECT * FRO... daily_customers" />
+                <marker date="1540488696000" expanded="true" signature="12480:12547" ph="SELECT * FRO... daily_customers" />
+                <marker date="1540488696000" expanded="true" signature="13356:13423" ph="SELECT * FRO... daily_customers" />
+                <marker date="1540488696000" expanded="true" signature="14311:14338" ph="ATTACH 'ORDE... test" />
+                <marker date="1540488696000" expanded="true" signature="14363:14409" ph="INSERT INTO rolodex... " />
+                <marker date="1540488696000" expanded="true" signature="14383:14409" ph="SELECT * FRO... rolodex" />
+                <marker date="1540488696000" expanded="true" signature="14745:14791" ph="SELECT * FRO... daily_customers" />
               </folding>
             </state>
           </provider>
@@ -92,8 +94,18 @@
       <file leaf-file-name="WindowFrame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="426" column="85" selection-start-line="426" selection-start-column="85" selection-end-line="426" selection-end-column="85" />
+            <state relative-caret-position="408">
+              <caret line="436" column="0" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomepageFrame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -139,9 +151,9 @@
         <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/scratchpad.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/connector.py" />
         <option value="$PROJECT_DIR$/Homepage_support/graphs.py" />
-        <option value="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
-        <option value="$PROJECT_DIR$/SQL_functions.py" />
         <option value="$PROJECT_DIR$/MenuFrame.py" />
+        <option value="$PROJECT_DIR$/SQL_functions.py" />
+        <option value="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
         <option value="$PROJECT_DIR$/WindowFrame.py" />
       </list>
     </option>
@@ -808,63 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SQL_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6390">
-          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-          <folding>
-            <marker date="1540078098000" expanded="true" signature="166:187" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="476:496" ph="SELECT * FRO... orders" />
-            <marker date="1540078098000" expanded="true" signature="1025:1065" ph="INSERT INTO rolodex... " />
-            <marker date="1540078098000" expanded="true" signature="1206:1227" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="1349:1370" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="1564:1596" ph="DELETE FROM " />
-            <marker date="1540078098000" expanded="true" signature="2289:2369" ph="UPDATE rolod... " />
-            <marker date="1540078098000" expanded="true" signature="2572:2659" ph="UPDATE rolod... " />
-            <marker date="1540078098000" expanded="true" signature="2858:2941" ph="UPDATE rolod... " />
-            <marker date="1540078098000" expanded="true" signature="3142:3227" ph="UPDATE rolod... " />
-            <marker date="1540078098000" expanded="true" signature="3372:3645" ph="CREATE TABLE... IF" />
-            <marker date="1540078098000" expanded="true" signature="3873:3909" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="4109:4153" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="4353:4396" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="4623:4669" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="4824:5007" ph="CREATE TABLE... orders" />
-            <marker date="1540078098000" expanded="true" signature="5201:5412" ph="CREATE TABLE... IF" />
-            <marker date="1540078098000" expanded="true" signature="5772:5814" ph="INSERT INTO customerprefs... " />
-            <marker date="1540078098000" expanded="true" signature="5969:5996" ph="SELECT * FRO... customerprefs" />
-            <marker date="1540078098000" expanded="true" signature="6409:6444" ph="INSERT INTO orders... " />
-            <marker date="1540078098000" expanded="true" signature="6836:6863" ph="SELECT * FRO... customerprefs" />
-            <marker date="1540078098000" expanded="true" signature="7041:7133" ph="SELECT * FRO... customerprefs" />
-            <marker date="1540078098000" expanded="true" signature="7366:7458" ph="SELECT * FRO... customerprefs" />
-            <marker date="1540078098000" expanded="true" signature="7808:7850" ph="INSERT INTO customerprefs... " />
-            <marker date="1540078098000" expanded="true" signature="8040:8072" ph="DELETE FROM " />
-            <marker date="1540078098000" expanded="true" signature="8094:8141" ph="DELETE FROM " />
-            <marker date="1540078098000" expanded="true" signature="8306:8506" ph="CREATE TABLE... IF" />
-            <marker date="1540078098000" expanded="true" signature="8692:8716" ph="SELECT * FRO... day_duties" />
-            <marker date="1540078098000" expanded="true" signature="9132:9171" ph="INSERT INTO day_duties... " />
-            <marker date="1540078098000" expanded="true" signature="9312:9336" ph="SELECT * FRO... day_duties" />
-            <marker date="1540078098000" expanded="true" signature="9507:9555" ph="SELECT * FRO... day_duties" />
-            <marker date="1540078098000" expanded="true" signature="9915:9955" ph="DELETE FROM " />
-            <marker date="1540078098000" expanded="true" signature="10112:10141" ph="SELECT * FRO... daily_customers" />
-            <marker date="1540078098000" expanded="true" signature="10444:10599" ph="CREATE TABLE... daily_customers" />
-            <marker date="1540078098000" expanded="true" signature="10908:10950" ph="INSERT INTO daily_customers... " />
-            <marker date="1540078098000" expanded="true" signature="11139:11190" ph="SELECT * FRO... daily_customers" />
-            <marker date="1540078098000" expanded="true" signature="11921:11988" ph="SELECT * FRO... daily_customers" />
-            <marker date="1540078098000" expanded="true" signature="12858:12885" ph="ATTACH 'ORDE... test" />
-            <marker date="1540078098000" expanded="true" signature="12910:12956" ph="INSERT INTO rolodex... " />
-            <marker date="1540078098000" expanded="true" signature="12930:12956" ph="SELECT * FRO... rolodex" />
-            <marker date="1540078098000" expanded="true" signature="13292:13338" ph="SELECT * FRO... daily_customers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MenuFrame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -873,10 +828,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="490" column="12" selection-start-line="490" selection-start-column="12" selection-end-line="490" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1540488696000" expanded="true" signature="182:203" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="492:512" ph="SELECT * FRO... orders" />
+            <marker date="1540488696000" expanded="true" signature="1041:1081" ph="INSERT INTO rolodex... " />
+            <marker date="1540488696000" expanded="true" signature="1222:1243" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="1365:1386" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="1580:1612" ph="DELETE FROM " />
+            <marker date="1540488696000" expanded="true" signature="2305:2385" ph="UPDATE rolod... " />
+            <marker date="1540488696000" expanded="true" signature="2588:2675" ph="UPDATE rolod... " />
+            <marker date="1540488696000" expanded="true" signature="2874:2957" ph="UPDATE rolod... " />
+            <marker date="1540488696000" expanded="true" signature="3158:3243" ph="UPDATE rolod... " />
+            <marker date="1540488696000" expanded="true" signature="3388:3661" ph="CREATE TABLE... IF" />
+            <marker date="1540488696000" expanded="true" signature="3889:3925" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="4125:4169" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="4369:4412" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="4639:4685" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="4840:5023" ph="CREATE TABLE... orders" />
+            <marker date="1540488696000" expanded="true" signature="5217:5428" ph="CREATE TABLE... IF" />
+            <marker date="1540488696000" expanded="true" signature="5788:5830" ph="INSERT INTO customerprefs... " />
+            <marker date="1540488696000" expanded="true" signature="5985:6012" ph="SELECT * FRO... customerprefs" />
+            <marker date="1540488696000" expanded="true" signature="6425:6460" ph="INSERT INTO orders... " />
+            <marker date="1540488696000" expanded="true" signature="6852:6879" ph="SELECT * FRO... customerprefs" />
+            <marker date="1540488696000" expanded="true" signature="7057:7149" ph="SELECT * FRO... customerprefs" />
+            <marker date="1540488696000" expanded="true" signature="7382:7474" ph="SELECT * FRO... customerprefs" />
+            <marker date="1540488696000" expanded="true" signature="7824:7866" ph="INSERT INTO customerprefs... " />
+            <marker date="1540488696000" expanded="true" signature="8056:8088" ph="DELETE FROM " />
+            <marker date="1540488696000" expanded="true" signature="8110:8157" ph="DELETE FROM " />
+            <marker date="1540488696000" expanded="true" signature="8322:8522" ph="CREATE TABLE... IF" />
+            <marker date="1540488696000" expanded="true" signature="8708:8732" ph="SELECT * FRO... day_duties" />
+            <marker date="1540488696000" expanded="true" signature="9148:9187" ph="INSERT INTO day_duties... " />
+            <marker date="1540488696000" expanded="true" signature="9328:9352" ph="SELECT * FRO... day_duties" />
+            <marker date="1540488696000" expanded="true" signature="9523:9571" ph="SELECT * FRO... day_duties" />
+            <marker date="1540488696000" expanded="true" signature="9931:9971" ph="DELETE FROM " />
+            <marker date="1540488696000" expanded="true" signature="10128:10157" ph="SELECT * FRO... daily_customers" />
+            <marker date="1540488696000" expanded="true" signature="10460:10615" ph="CREATE TABLE... daily_customers" />
+            <marker date="1540488696000" expanded="true" signature="10924:10966" ph="INSERT INTO daily_customers... " />
+            <marker date="1540488696000" expanded="true" signature="11155:11206" ph="SELECT * FRO... daily_customers" />
+            <marker date="1540488696000" expanded="true" signature="12480:12547" ph="SELECT * FRO... daily_customers" />
+            <marker date="1540488696000" expanded="true" signature="13356:13423" ph="SELECT * FRO... daily_customers" />
+            <marker date="1540488696000" expanded="true" signature="14311:14338" ph="ATTACH 'ORDE... test" />
+            <marker date="1540488696000" expanded="true" signature="14363:14409" ph="INSERT INTO rolodex... " />
+            <marker date="1540488696000" expanded="true" signature="14383:14409" ph="SELECT * FRO... rolodex" />
+            <marker date="1540488696000" expanded="true" signature="14745:14791" ph="SELECT * FRO... daily_customers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="104" column="25" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WindowFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="426" column="85" selection-start-line="426" selection-start-column="85" selection-end-line="426" selection-end-column="85" />
+        <state relative-caret-position="408">
+          <caret line="436" column="0" selection-start-line="436" selection-start-column="0" selection-end-line="436" selection-end-column="0" />
           <folding />
         </state>
       </provider>

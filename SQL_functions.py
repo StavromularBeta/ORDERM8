@@ -1,6 +1,7 @@
 import sqlite3
 import datetime
 from collections import Counter
+import calendar
 
 def return_unique_ID():
     conn = sqlite3.connect("ORDERM8.db")
@@ -389,6 +390,22 @@ def weekly_graph_data():
     return week_dictionary
 
 
+def monthly_graph_data():
+    entries = return_this_months_customer_entries()[0]
+    start_end = return_this_months_customer_entries()[1]
+    daycount = enumerate_this_months_customer_entries(entries)
+    month_dictionary = {}
+    dictionary_range = range(start_end[0].day,start_end[1].day+1,1)
+    for item in dictionary_range:
+        month_dictionary[item] = 0
+    for key, value in daycount.items():
+        if key in month_dictionary:
+            month_dictionary[key] = value
+        else:
+            pass
+    return month_dictionary
+
+
 def return_this_weeks_customer_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -408,6 +425,30 @@ def enumerate_this_weeks_customer_entries(customer_entries):
     for item in dates:
         days.append(datetime.datetime.strptime(item, "%Y-%m-%d").weekday())
     return Counter(days)
+
+
+def return_this_months_customer_entries():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    today_date = datetime.date.today()
+    start_of_month = datetime.datetime(today_date.year, today_date.month, 1)
+    end_of_month = datetime.datetime(today_date.year,
+                                     today_date.month,
+                                     calendar.monthrange(today_date.year, today_date.month)[1])
+    start_end_tuple = (start_of_month, end_of_month)
+    c.execute('SELECT * FROM daily_customers WHERE todays_date BETWEEN (?) and (?)', start_end_tuple)
+    return c, start_end_tuple
+
+
+def enumerate_this_months_customer_entries(customer_entries):
+    dates = []
+    for item in customer_entries:
+            dates.append(item[2])
+    days = []
+    for item in dates:
+        days.append(datetime.datetime.strptime(item, "%Y-%m-%d").day)
+    return Counter(days)
+
 
 
 # for messing around with daily customer entries
