@@ -406,6 +406,18 @@ def monthly_graph_data():
     return month_dictionary
 
 
+def yearly_graph_data():
+    entries = return_this_years_customer_entries()
+    daycount = enumerate_this_years_customer_entries(entries)
+    week_dictionary = {0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0}
+    for key, value in daycount.items():
+        if key in week_dictionary:
+            week_dictionary[key] = value
+        else:
+            pass
+    return week_dictionary
+
+
 def return_this_weeks_customer_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -450,6 +462,25 @@ def enumerate_this_months_customer_entries(customer_entries):
     return Counter(days)
 
 
+def return_this_years_customer_entries():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    today_date = datetime.date.today()
+    start_of_year = datetime.datetime(today_date.year, 1, 1)
+    end_of_year = datetime.datetime(today_date.year, 12, 31)
+    start_end_tuple = (start_of_year, end_of_year)
+    c.execute('SELECT * FROM daily_customers WHERE todays_date BETWEEN (?) and (?)', start_end_tuple)
+    return c, start_end_tuple
+
+
+def enumerate_this_years_customer_entries(customer_entries):
+    dates = []
+    for item in customer_entries[0]:
+            dates.append(item[2])
+    days = []
+    for item in dates:
+        days.append(datetime.datetime.strptime(item, "%Y-%m-%d").month)
+    return Counter(days)
 
 # for messing around with daily customer entries
 
@@ -489,3 +520,5 @@ def select_recent_activity(customer_id):
     customer_id_tuple = (customer_id,)
     c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
     return c
+
+print yearly_graph_data()

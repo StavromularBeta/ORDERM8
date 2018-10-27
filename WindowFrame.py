@@ -421,7 +421,7 @@ class WindowFrame(tk.Frame):
 
     def graphs_page(self):
         self.clear_window_frame()
-        self.graphs_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,1000))
+        self.graphs_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,1200))
         self.graphs_scroll = tk.Scrollbar(self, orient="vertical", command=self.graphs_canvas.yview)
         self.graphs_frame = tk.Frame(self)
         self.graphs_canvas.configure(yscrollcommand=self.graphs_scroll.set)
@@ -431,6 +431,8 @@ class WindowFrame(tk.Frame):
         self.graphs_label = tk.Label(self.graphs_frame, text="Graphs", font=self.parent.new_cust_font)
         self.graphs_label.grid(row=0, column=0)
         canvas_and_toolbar = HF.create_weekly_customer_figure(self.graphs_frame)
-        canvas_and_toolbar.get_tk_widget().grid(row=1, column=0, padx=10, sticky=tk.W)
+        canvas_and_toolbar.get_tk_widget().grid(row=1, column=0, padx=10, pady=10, sticky=tk.W)
         canvas_and_toolbar = HF.create_monthly_customer_figure(self.graphs_frame)
-        canvas_and_toolbar.get_tk_widget().grid(row=2, column=0, padx=10, sticky=tk.W)
+        canvas_and_toolbar.get_tk_widget().grid(row=2, column=0, padx=10, pady=10, sticky=tk.W)
+        canvas_and_toolbar = HF.create_yearly_customer_figure(self.graphs_frame)
+        canvas_and_toolbar.get_tk_widget().grid(row=3, column=0, padx=10, pady=10, sticky=tk.W)

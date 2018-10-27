@@ -123,3 +123,23 @@ def create_monthly_customer_figure(tk_frame):
     return canvas
 
 
+def create_yearly_customer_figure(tk_frame):
+    f = Figure(figsize=(6,4), dpi=100)
+    ax = f.add_subplot(111)
+    ygd = sq.yearly_graph_data()
+    x_labels = np.array(["J", "F", "Mr", "A", "M", "Ju", "J", "A", "S", "O", "N", "D"])
+    y_axis = np.array([ygd[1], ygd[2], ygd[3], ygd[4], ygd[5], ygd[6], ygd[7], ygd[8], ygd[9], ygd[10], ygd[11], ygd[12]])
+    w = 5
+    nitems = len(y_axis)
+    x_axis = np.arange(0, nitems*w, w)
+    ax.bar(x_axis, y_axis, width=3, align='center',)
+    ax.set_xticks(x_axis)
+    ax.set_yticks(np.arange(0, 101, 10))
+    ax.set_xticklabels(x_labels)
+    ax.set_ylabel('Deliveries')
+    ax.set_xlabel('Month')
+    ax.set_title("This Year's Deliveries")
+    f.tight_layout()
+    canvas = FigureCanvasTkAgg(f, tk_frame)
+    canvas.show()
+    return canvas
