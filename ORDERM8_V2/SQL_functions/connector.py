@@ -21,7 +21,3 @@ class Connector(object):
         returned_query = cursor
         db_connection.close()
         return returned_query
-
-
-
-

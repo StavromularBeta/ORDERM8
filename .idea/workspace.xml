@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORDERM8_V2/database_files/ORDERM8V2.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/BannerBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/BannerBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/GraphsWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/GraphsWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/HomepageWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/HomepageWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/SearchWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/SearchWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/NavigationBar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/NavigationBar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/ORDERM8_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/ORDERM8_V2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py" afterDir="false" />
     </list>
     <ignored path="ORDERM8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,25 +34,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="5" />
-          <entry key="py" value="3609" />
+          <entry key="py" value="3845" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="3609" />
+          <entry key="Python" value="3845" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="py" value="48" />
+          <entry key="py" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="48" />
+          <entry key="Python" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -89,10 +82,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="392">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -148,11 +159,11 @@
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/BannerBar.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/GraphsWindow.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/NavigationBar.py" />
-        <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" />
-        <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/ORDERM8_V2.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindow.py" />
+        <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py" />
+        <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py" />
       </list>
     </option>
   </component>
@@ -193,14 +204,13 @@
               <item name="ORDERM8" type="b2602c69:ProjectViewProjectNode" />
               <item name="ORDERM8" type="462c0819:PsiDirectoryNode" />
               <item name="ORDERM8_V2" type="462c0819:PsiDirectoryNode" />
-              <item name="main_application" type="462c0819:PsiDirectoryNode" />
+              <item name="database_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ORDERM8" type="b2602c69:ProjectViewProjectNode" />
               <item name="ORDERM8" type="462c0819:PsiDirectoryNode" />
               <item name="ORDERM8_V2" type="462c0819:PsiDirectoryNode" />
               <item name="main_application" type="462c0819:PsiDirectoryNode" />
-              <item name="MainWindows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ORDERM8" type="b2602c69:ProjectViewProjectNode" />
@@ -459,7 +469,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10724638" weight="0.3278272" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10724638" weight="0.32738853" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32992327" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8927536" visible="true" weight="0.32611465" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3278272" />
@@ -656,20 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -716,11 +712,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/EditAddWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="392">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/addel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
