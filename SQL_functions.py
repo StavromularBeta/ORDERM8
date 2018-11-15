@@ -49,7 +49,7 @@ def review_all_entries():
     c = conn.cursor()
     c.execute('SELECT * FROM rolodex')
     for item in c:
-        print item[0], item[1], item[2], item[3], item[4]
+        print(item[0], item[1], item[2], item[3], item[4])
 
 
 def delete_entry_by_id(uniqueID):
@@ -69,7 +69,7 @@ def update_rolodex_entry(variable, variable_type, uniqueID):
     elif variable_type == "payMethod":
         update_rolodex_entry_payMethod(variable, uniqueID)
     else:
-        print "failed to update anything."
+        print("failed to update anything.")
 
 
 def update_rolodex_entry_name(variable, uniqueID):
@@ -520,5 +520,3 @@ def select_recent_activity(customer_id):
     customer_id_tuple = (customer_id,)
     c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
     return c
-
-print yearly_graph_data()

@@ -1,4 +1,4 @@
-import Tkinter as tk
+import tkinter as tk
 import SQL_functions
 import Homepage_support.HomepageFrame as HF
 

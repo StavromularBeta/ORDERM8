@@ -97,7 +97,6 @@ def create_weekly_customer_figure(tk_frame):
     ax.set_title("This Week's Deliveries")
     f.tight_layout()
     canvas = FigureCanvasTkAgg(f, tk_frame)
-    canvas.show()
     return canvas
 
 
@@ -105,10 +104,10 @@ def create_monthly_customer_figure(tk_frame):
     f = Figure(figsize=(9, 3), dpi=100)
     ax = f.add_subplot(111)
     mgd = sq.monthly_graph_data()
-    last_day = max(mgd.iteritems(), key=operator.itemgetter(0))[0]
+    last_day = max(mgd.items(), key=operator.itemgetter(0))[0]
     x_axis = np.arange(1, last_day+1, 1)
     y_axis = []
-    for item in mgd.iteritems():
+    for item in mgd.items():
         y_axis.append(item[1])
     y_axis = np.array(y_axis)
     ax.bar(x_axis,y_axis, width=0.8, align='center')
@@ -119,7 +118,6 @@ def create_monthly_customer_figure(tk_frame):
     ax.set_title("This Month's Deliveries")
     f.tight_layout()
     canvas = FigureCanvasTkAgg(f, tk_frame)
-    canvas.show()
     return canvas
 
 
@@ -141,5 +139,4 @@ def create_yearly_customer_figure(tk_frame):
     ax.set_title("This Year's Deliveries")
     f.tight_layout()
     canvas = FigureCanvasTkAgg(f, tk_frame)
-    canvas.show()
     return canvas
