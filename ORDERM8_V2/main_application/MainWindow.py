@@ -1,5 +1,5 @@
-import Tkinter as Tk
-from MainWindows import HomepageWindow as Hpw, GraphsWindow as Grw, SearchWindow as Srw
+import tkinter as Tk
+from MainWindows import HomepageWindow as Hpw, GraphsWindow as Grw, SearchWindow as Srw, EditAddWindow as Eaw
 
 
 class MainWindow(Tk.Frame):
@@ -8,6 +8,7 @@ class MainWindow(Tk.Frame):
         self.HomepageWindow = Hpw.HomepageWindow(self)
         self.GraphsWindow = Grw.GraphsWindow(self)
         self.SearchWindow = Srw.SearchWindow(self)
+        self.EditAddWindow = Eaw.EditAddWindow(self)
 
     def clear_main_window(self):
         for widget in self.winfo_children():
@@ -15,6 +16,7 @@ class MainWindow(Tk.Frame):
         self.HomepageWindow = Hpw.HomepageWindow(self)
         self.GraphsWindow = Grw.GraphsWindow(self)
         self.SearchWindow = Srw.SearchWindow(self)
+        self.EditAddWindow = Eaw.EditAddWindow(self)
 
     def display_homepage(self):
         self.clear_main_window()
@@ -30,3 +32,8 @@ class MainWindow(Tk.Frame):
         self.clear_main_window()
         self.SearchWindow.search()
         self.SearchWindow.grid()
+
+    def display_editaddpage(self):
+        self.clear_main_window()
+        self.EditAddWindow.edit_add()
+        self.EditAddWindow.grid()

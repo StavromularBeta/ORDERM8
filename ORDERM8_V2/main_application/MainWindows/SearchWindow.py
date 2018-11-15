@@ -1,4 +1,4 @@
-import Tkinter as Tk
+import tkinter as Tk
 
 
 class SearchWindow(Tk.Frame):

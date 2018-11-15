@@ -1,4 +1,4 @@
-import Tkinter as Tk
+import tkinter as Tk
 import BannerBar as Bb
 import NavigationBar as Nb
 import MainWindow as Mw

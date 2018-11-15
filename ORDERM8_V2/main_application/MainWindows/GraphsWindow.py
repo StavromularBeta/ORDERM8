@@ -1,4 +1,4 @@
-import Tkinter as Tk
+import tkinter as Tk
 
 
 class GraphsWindow(Tk.Frame):
