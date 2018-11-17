@@ -15,6 +15,6 @@ class Selection(Connector):
         query = "SELECT * FROM " + self.table_names[table_number]
         if print_view:
             for item in self.connector(query):
-                print item
+                print(item)
         else:
             return self.connector(query)

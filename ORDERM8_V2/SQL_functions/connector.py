@@ -19,5 +19,5 @@ class Connector(object):
             cursor.execute(query)
         db_connection.commit()
         returned_query = cursor
-        db_connection.close()
+        # db_connection.close() removed because selection.py wasn't working, kept saying cannot op. on closed db.
         return returned_query

@@ -30,7 +30,7 @@ class MainWindow(Tk.Frame):
 
     def display_searchpage(self):
         self.clear_main_window()
-        self.SearchWindow.search()
+        self.SearchWindow.display_all_customers()
         self.SearchWindow.grid()
 
     def display_editaddpage(self):
