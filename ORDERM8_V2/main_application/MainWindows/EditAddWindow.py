@@ -17,6 +17,17 @@ class EditAddWindow(Tk.Frame):
         self.e5 = Tk.Entry(self.add_new_customer_frame)
         self.e6 = Tk.Entry(self.add_new_customer_frame)
 
+    def clear_edit_add_frame(self):
+        for widget in self.winfo_children():
+            widget.destroy()
+        self.add_new_customer_frame = Tk.Frame(self)
+        self.e1 = Tk.Entry(self.add_new_customer_frame)
+        self.e2 = Tk.Entry(self.add_new_customer_frame)
+        self.e3 = Tk.Entry(self.add_new_customer_frame)
+        self.e4 = Tk.Entry(self.add_new_customer_frame)
+        self.e5 = Tk.Entry(self.add_new_customer_frame)
+        self.e6 = Tk.Entry(self.add_new_customer_frame)
+
     def edit_add(self):
         edit_add_label = Tk.Label(self, text="Edit/Add")
         new_customer_entry_frame = self.generate_new_customer_frame()
@@ -56,3 +67,5 @@ class EditAddWindow(Tk.Frame):
                           True,
                           customer_order_method]
         self.add_delete_query.new_rolodex_entry(customer_entry)
+        self.clear_edit_add_frame()
+        self.edit_add()
