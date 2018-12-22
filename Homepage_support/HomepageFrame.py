@@ -32,7 +32,7 @@ def generate_time_until_cutoff():
         cutoff_sentence = "(Past cut-off)"
         return cutoff_sentence
     else:
-        hour_until_cutoff = int(time_to_cutoff.total_seconds()) / 3600
+        hour_until_cutoff = int(int(time_to_cutoff.total_seconds()) / 3600)
         if hour_until_cutoff >= 1:
             minutes_until_cutoff = int((float(time_to_cutoff.total_seconds() / 3600) - float(hour_until_cutoff))*60)
             cutoff_sentence = "(" + str(hour_until_cutoff) + "h " + str(minutes_until_cutoff) + \

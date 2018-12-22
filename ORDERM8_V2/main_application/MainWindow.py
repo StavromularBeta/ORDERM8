@@ -28,9 +28,12 @@ class MainWindow(Tk.Frame):
         self.GraphsWindow.graphs()
         self.GraphsWindow.grid()
 
-    def display_searchpage(self):
+    def display_searchpage(self, search=None):
         self.clear_main_window()
-        self.SearchWindow.display_all_customers()
+        if search:
+            self.SearchWindow.display_all_customers(search)
+        else:
+            self.SearchWindow.display_all_customers()
         self.SearchWindow.search_customers()
         self.SearchWindow.grid()
 
