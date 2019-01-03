@@ -58,14 +58,14 @@ class EditAddWindow(Tk.Frame):
         customer_address = self.e4.get()
         customer_pay_method = self.e5.get()
         customer_order_method = self.e6.get()
-        customer_entry = [None,
+        customer_entry = (None,
                           customer_last_name,
                           customer_first_name,
                           customer_phone_number,
                           customer_address,
                           customer_pay_method,
                           True,
-                          customer_order_method]
+                          customer_order_method,)
         self.add_delete_query.new_rolodex_entry(customer_entry)
         self.clear_edit_add_frame()
         self.edit_add()

@@ -1,5 +1,9 @@
 import tkinter as Tk
-from MainWindows import HomepageWindow as Hpw, GraphsWindow as Grw, SearchWindow as Srw, EditAddWindow as Eaw
+from MainWindows import HomepageWindow as Hpw,\
+                        GraphsWindow as Grw,\
+                        SearchWindow as Srw,\
+                        EditAddWindow as Eaw,\
+                        CustomerpageWindow as Cpw
 
 
 class MainWindow(Tk.Frame):
@@ -9,6 +13,7 @@ class MainWindow(Tk.Frame):
         self.GraphsWindow = Grw.GraphsWindow(self)
         self.SearchWindow = Srw.SearchWindow(self)
         self.EditAddWindow = Eaw.EditAddWindow(self)
+        self.CustomerpageWindow = Cpw.CustomerpageWindow(self)
 
     def clear_main_window(self):
         for widget in self.winfo_children():
@@ -17,6 +22,7 @@ class MainWindow(Tk.Frame):
         self.GraphsWindow = Grw.GraphsWindow(self)
         self.SearchWindow = Srw.SearchWindow(self)
         self.EditAddWindow = Eaw.EditAddWindow(self)
+        self.CustomerpageWindow = Cpw.CustomerpageWindow(self)
 
     def display_homepage(self):
         self.clear_main_window()
@@ -41,3 +47,8 @@ class MainWindow(Tk.Frame):
         self.clear_main_window()
         self.EditAddWindow.edit_add()
         self.EditAddWindow.grid()
+
+    def display_customerpage(self, customer):
+        self.clear_main_window()
+        self.CustomerpageWindow.generate_customer_page(customer)
+        self.CustomerpageWindow.grid()

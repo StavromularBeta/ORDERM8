@@ -154,7 +154,7 @@ class WindowFrame(tk.Frame):
 
     def populate_entries(self):
         self.clear_window_frame()
-        self.allentries_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,2000))
+        self.allentries_canvas = tk.Canvas(self, width=800, height=800, scrollregion=(0,0,0,3600))
         self.allentries_scroll = tk.Scrollbar(self, orient="vertical", command=self.allentries_canvas.yview)
         self.allentries_frame = tk.Frame(self)
         self.allentries_canvas.configure(yscrollcommand=self.allentries_scroll.set)

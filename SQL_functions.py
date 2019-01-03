@@ -40,7 +40,7 @@ def input_entry(customerFirstName, customerLastName, customerPhoneNumber, custom
 def return_all_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
-    c.execute('SELECT * FROM rolodex')
+    c.execute('SELECT * FROM rolodex ORDER BY last_name')
     return c
 
 
@@ -376,6 +376,12 @@ def return_all_daily_customer_entries():
     date = (datetime.date.today(),)
     c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
+
+def weekly_average_graph_data():
+    entries = return_this_years_customer_entries()
+    daycount = enumerate_this_weeks_customer_entries(entries)
+    weekcount = datetime.date.today().isocalendar()[1]
+    pass
 
 
 def weekly_graph_data():
