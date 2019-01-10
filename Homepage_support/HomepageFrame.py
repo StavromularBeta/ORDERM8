@@ -100,6 +100,26 @@ def create_weekly_customer_figure(tk_frame):
     return canvas
 
 
+def create_weekly_average_customer_figure(tk_frame, data):
+    f = Figure(figsize=(3,3), dpi=100)
+    ax = f.add_subplot(111)
+    x_labels = np.array(["M", "T", "W", "Th", "F"])
+    y_axis = np.array([data[0], data[1], data[2], data[3], data[4]])
+    w = 5
+    nitems = len(y_axis)
+    x_axis = np.arange(0, nitems*w, w)
+    ax.bar(x_axis, y_axis, width=3, align='center',)
+    ax.set_xticks(x_axis)
+    ax.set_yticks(np.arange(0, 100, 25))
+    ax.set_xticklabels(x_labels)
+    ax.set_ylabel('Deliveries')
+    ax.set_xlabel('Weekday')
+    ax.set_title("Delivery Distribution")
+    f.tight_layout()
+    canvas = FigureCanvasTkAgg(f, tk_frame)
+    return canvas
+
+
 def create_monthly_customer_figure(tk_frame):
     f = Figure(figsize=(9, 3), dpi=100)
     ax = f.add_subplot(111)

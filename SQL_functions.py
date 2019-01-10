@@ -518,5 +518,5 @@ def select_recent_activity(customer_id):
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
     customer_id_tuple = (customer_id,)
-    c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
+    c.execute("SELECT * FROM daily_customers WHERE custid=(?) ORDER BY todays_date DESC LIMIT 10", customer_id_tuple)
     return c

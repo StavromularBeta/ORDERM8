@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e11866a-17a2-43ef-bc1f-eeea28ae5d0a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/CustomerpageWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/CustomerpageWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SQL_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WindowFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/WindowFrame.py" afterDir="false" />
     </list>
@@ -36,25 +35,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="5" />
-          <entry key="py" value="9014" />
+          <entry key="py" value="9765" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="9014" />
+          <entry key="Python" value="9765" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="py" value="82" />
+          <entry key="py" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="82" />
+          <entry key="Python" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -65,25 +64,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WindowFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1978">
-              <caret line="303" column="20" lean-forward="true" selection-start-line="303" selection-start-column="20" selection-end-line="303" selection-end-column="20" />
+            <state relative-caret-position="382">
+              <caret line="276" column="74" selection-start-line="276" selection-start-column="74" selection-end-line="276" selection-end-column="74" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <marker date="1547150252598" expanded="true" signature="19075:19084" ph="..." />
-                <marker date="1547150252598" expanded="true" signature="20303:20309" ph="..." />
+                <marker date="1547153318758" expanded="true" signature="19338:19347" ph="..." />
+                <marker date="1547153318758" expanded="true" signature="20806:20811" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="-4">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -94,11 +93,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SQL_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="383" column="4" lean-forward="true" selection-start-line="383" selection-start-column="4" selection-end-line="389" selection-end-column="26" />
+            <state relative-caret-position="392">
+              <caret line="522" lean-forward="true" selection-start-line="522" selection-end-line="522" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1547142035039" expanded="true" signature="11248:11251" ph="..." />
+                <marker date="1547153225636" expanded="true" signature="11248:11251" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,9 +154,9 @@
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindow.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/main_application/MainWindows/CustomerpageWindow.py" />
         <option value="$PROJECT_DIR$/ORDERM8_V2/SQL_functions/createtb.py" />
+        <option value="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
         <option value="$PROJECT_DIR$/SQL_functions.py" />
         <option value="$PROJECT_DIR$/WindowFrame.py" />
-        <option value="$PROJECT_DIR$/Homepage_support/HomepageFrame.py" />
       </list>
     </option>
   </component>
@@ -433,7 +432,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" order="0" visible="true" weight="0.23678647" />
       <window_info id="Structure" order="1" weight="0.27173913" />
@@ -624,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/tight_layout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="863">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ORDERM8_V2/SQL_functions/selection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -711,35 +702,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SQL_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="383" column="4" lean-forward="true" selection-start-line="383" selection-start-column="4" selection-end-line="389" selection-end-column="26" />
+        <state relative-caret-position="392">
+          <caret line="522" lean-forward="true" selection-start-line="522" selection-end-line="522" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1547142035039" expanded="true" signature="11248:11251" ph="..." />
+            <marker date="1547153225636" expanded="true" signature="11248:11251" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/tight_layout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WindowFrame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1978">
-          <caret line="303" column="20" lean-forward="true" selection-start-line="303" selection-start-column="20" selection-end-line="303" selection-end-column="20" />
+        <state relative-caret-position="382">
+          <caret line="276" column="74" selection-start-line="276" selection-start-column="74" selection-end-line="276" selection-end-column="74" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <marker date="1547150252598" expanded="true" signature="19075:19084" ph="..." />
-            <marker date="1547150252598" expanded="true" signature="20303:20309" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage_support/HomepageFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1547153318758" expanded="true" signature="19338:19347" ph="..." />
+            <marker date="1547153318758" expanded="true" signature="20806:20811" ph="..." />
           </folding>
         </state>
       </provider>

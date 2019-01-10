@@ -231,7 +231,7 @@ class WindowFrame(tk.Frame):
         self.customer_delivery_preferences_textbox = tk.Text(self.customer_delivery_preferences_frame,
                                                              borderwidth=1,
                                                              width=65,
-                                                             height=25,
+                                                             height=20,
                                                              wrap="word",
                                                              highlightbackground="#D24C45")
         self.insert_delivery_preferences_onstart()
@@ -252,7 +252,7 @@ class WindowFrame(tk.Frame):
         self.customer_food_preferences_textbox = tk.Text(self.customer_food_preferences_frame,
                                                          borderwidth=1,
                                                          width=65,
-                                                         height=25,
+                                                         height=20,
                                                          wrap="word",
                                                          highlightbackground="#D24C45")
         self.insert_food_preferences_onstart()
@@ -268,11 +268,14 @@ class WindowFrame(tk.Frame):
         self.recent_customer_orders_frame = tk.Frame(self)
         self.recent_customer_orders_frame.grid(row=3, column=0, padx=2, sticky=tk.W)
         tk.Label(self.recent_customer_orders_frame,
-                 text="Past Customer Orders",
+                 text="Last 10 Customer Orders",
                  font=self.parent.label_cust_font,
                  ).grid(row=0, column=0, padx=2, sticky=tk.W)
         self.past_customer_orders(customer_entry[0])
-        print(self.average_past_order_graph_data(customer_entry[0]))
+        self.average_graph = HF.create_weekly_average_customer_figure(self.recent_customer_orders_frame,
+                                                                      self.average_past_order_graph_data(customer_entry[0]))
+        self.average_graph.get_tk_widget().grid(row=0, column=1, rowspan=10, padx=2, sticky=tk.W)
+
 
 
     def past_customer_orders(self, customer_id):
@@ -302,8 +305,12 @@ class WindowFrame(tk.Frame):
                 week_dictionary[key] = value
             else:
                 pass
+        total_orders = 0
+        for key, value in week_dictionary.items():
+            total_orders = total_orders + value
+        for key, value in week_dictionary.items():
+            week_dictionary[key] = float(value/total_orders)*100
         return week_dictionary
-
 
     def delete_current_customer(self):
         SQL_functions.delete_customer_and_customer_records(self.current_customer_entry[0])
