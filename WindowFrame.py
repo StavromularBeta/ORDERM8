@@ -1,6 +1,8 @@
 import tkinter as tk
 import SQL_functions
 import Homepage_support.HomepageFrame as HF
+import datetime
+from collections import Counter
 
 
 class WindowFrame(tk.Frame):
@@ -270,6 +272,8 @@ class WindowFrame(tk.Frame):
                  font=self.parent.label_cust_font,
                  ).grid(row=0, column=0, padx=2, sticky=tk.W)
         self.past_customer_orders(customer_entry[0])
+        print(self.average_past_order_graph_data(customer_entry[0]))
+
 
     def past_customer_orders(self, customer_id):
         #just all orders for now.
@@ -281,6 +285,25 @@ class WindowFrame(tk.Frame):
                                                                            padx=2,
                                                                            sticky=tk.W)
             rowstart += 1
+
+    def average_past_order_graph_data(self, customer_id):
+        past_customer_orders = SQL_functions.select_recent_activity(customer_id)
+        dates = []
+        for item in past_customer_orders:
+            dates.append(item[2])
+        days = []
+        for item in dates:
+            days.append(datetime.datetime.strptime(item, "%Y-%m-%d").weekday())
+        print(days)
+        day_counter = Counter(days)
+        week_dictionary = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+        for key, value in day_counter.items():
+            if key in week_dictionary:
+                week_dictionary[key] = value
+            else:
+                pass
+        return week_dictionary
+
 
     def delete_current_customer(self):
         SQL_functions.delete_customer_and_customer_records(self.current_customer_entry[0])

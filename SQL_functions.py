@@ -377,12 +377,6 @@ def return_all_daily_customer_entries():
     c.execute('SELECT * FROM daily_customers WHERE todays_date=(?)', date)
     return c
 
-def weekly_average_graph_data():
-    entries = return_this_years_customer_entries()
-    daycount = enumerate_this_weeks_customer_entries(entries)
-    weekcount = datetime.date.today().isocalendar()[1]
-    pass
-
 
 def weekly_graph_data():
     entries = return_this_weeks_customer_entries()

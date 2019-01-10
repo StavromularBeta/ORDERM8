@@ -47,4 +47,4 @@ class CreateTb(Connector):
 #db.create_table(2)
 #db.create_table(3)
 #db.create_table(4)
-#b.create_table(5)
+#db.create_table(5)
