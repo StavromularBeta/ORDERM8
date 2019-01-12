@@ -418,6 +418,12 @@ def yearly_graph_data():
     return week_dictionary
 
 
+def return_all_customer_entries_from_daily_customers():
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    c.execute('SELECT * FROM daily_customers')
+    return c
+
 def return_this_weeks_customer_entries():
     conn = sqlite3.connect("ORDERM8.db")
     c = conn.cursor()
@@ -512,6 +518,14 @@ def copy_table_db_to_db():
 
 # will only need this function once rolodex and customerprefs are cleared out.
 # copy_table_db_to_db()
+
+
+def select_all_activity(customer_id):
+    conn = sqlite3.connect("ORDERM8.db")
+    c = conn.cursor()
+    customer_id_tuple = (customer_id,)
+    c.execute("SELECT * FROM daily_customers WHERE custid=(?)", customer_id_tuple)
+    return c
 
 
 def select_recent_activity(customer_id):

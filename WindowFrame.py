@@ -32,6 +32,9 @@ class WindowFrame(tk.Frame):
         self.generate_labels_for_daily_customers(startrow)
         canvas_and_toolbar = HF.create_weekly_customer_figure(self)
         canvas_and_toolbar.get_tk_widget().grid(row=1, column=1, rowspan=15, sticky=tk.W)
+        self.homepage_average_graph = HF.create_weekly_average_customer_figure(self,
+                                                                               self.all_average_past_order_graph_data())
+        self.homepage_average_graph.get_tk_widget().grid(row=1, column=2, rowspan=15, padx=2, sticky=tk.W)
 
     def generate_labels_for_daily_tasks(self):
         startrow = 2
@@ -290,14 +293,13 @@ class WindowFrame(tk.Frame):
             rowstart += 1
 
     def average_past_order_graph_data(self, customer_id):
-        past_customer_orders = SQL_functions.select_recent_activity(customer_id)
+        past_customer_orders = SQL_functions.select_all_activity(customer_id)
         dates = []
         for item in past_customer_orders:
             dates.append(item[2])
         days = []
         for item in dates:
             days.append(datetime.datetime.strptime(item, "%Y-%m-%d").weekday())
-        print(days)
         day_counter = Counter(days)
         week_dictionary = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
         for key, value in day_counter.items():
@@ -310,6 +312,29 @@ class WindowFrame(tk.Frame):
             total_orders = total_orders + value
         for key, value in week_dictionary.items():
             week_dictionary[key] = float(value/total_orders)*100
+        return week_dictionary
+
+    def all_average_past_order_graph_data(self):
+        past_customer_orders = SQL_functions.return_all_customer_entries_from_daily_customers()
+        dates = []
+        for item in past_customer_orders:
+            dates.append(item[2])
+        days = []
+        for item in dates:
+            days.append(datetime.datetime.strptime(item, "%Y-%m-%d").weekday())
+        day_counter = Counter(days)
+        week_dictionary = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+        for key, value in day_counter.items():
+            if key in week_dictionary:
+                week_dictionary[key] = value
+            else:
+                pass
+        total_orders = 0
+        for key, value in week_dictionary.items():
+            total_orders = total_orders + value
+        for key, value in week_dictionary.items():
+            week_dictionary[key] = float(value/total_orders)*100
+        print(total_orders)
         return week_dictionary
 
     def delete_current_customer(self):
