@@ -33,13 +33,16 @@ class SearchWindow(Tk.Frame):
         Tk.Label(self.all_customer_display_frame, text="Phone").grid(row=0, column=1)
         Tk.Label(self.all_customer_display_frame, text="Address").grid(row=0, column=2)
         if search:
-            self.return_searched_customers(search)
+            self.return_customers(search)
         else:
-            self.return_all_customers()
+            self.return_customers()
         self.customer_display_frame.grid(row=0, column=0)
 
-    def return_all_customers(self):
-        all_customer_data = self.selection.select_all_from_table(1)
+    def return_customers(self, search=None):
+        if search:
+            all_customer_data = search
+        else:
+            all_customer_data = self.selection.select_all_from_table(1)
         first_customer_row = 1
         for item in all_customer_data:
             name = item[2] + " " + item[1]
@@ -76,15 +79,3 @@ class SearchWindow(Tk.Frame):
             search_results = self.selection.select_from_rolodex_table_with_conditions(2, (entry_field,))
         self.parent.display_searchpage(search_results)
 
-    def return_searched_customers(self, search):
-        first_customer_row = 1
-        for item in search:
-            name = item[2] + " " + item[1]
-            phone = item[3]
-            address = item[4]
-            Tk.Button(self.all_customer_display_frame,
-                      text=name,
-                      command=lambda item=item: self.parent.display_customerpage(item)).grid(row=first_customer_row, column=0)
-            Tk.Label(self.all_customer_display_frame, text=phone).grid(row=first_customer_row, column=1)
-            Tk.Label(self.all_customer_display_frame, text=address).grid(row=first_customer_row, column=2)
-            first_customer_row += 1
