@@ -3,10 +3,16 @@ This is the ORDERM8 project.
 
 ORDERM8 is a lightweight software designed for keeping track of delivery customers. 
 
-each customer entered into the ORDERM8 database has a customer page, where their basic information, delivery preferences, and food preferences are displayed.
+each customer entered into the ORDERM8 database has a customer page, currently containing the following
+- basic information
+- food preferences
+- delivery preferences
+- previous order dates (10 most recent or less displayed)
+- historical order distribution graph
 
 ORDERM8 also currently has daily customer tracking amd daily task tracking on the homepage. 
 
-the purpose of this version of ORDERM8 is to quickly and roughly try new features. Once a robust set of features is developed in concept, they will be put together in a better organized, and nicer looking, ORDERM8 V2.
+There are two versions of ORDERM8. V1 is for quickly getting out features using rough code. These ideas are then written with more thought in V2. V2 is relatively new at this point (Jan 2019) and is fairly far behind V1 in terms of features.
 
-To run ORDERM8, navigate to the main ORDERM8 directory and run ORDERM8.py.
+To run ORDERM8, navigate to the main ORDERM8 directory and run ORDERM8.py. The program has to be run using python3.
+To run ORDERM8 V2, navigate to the main ORDERM8 directory, then go ORDERM8_V2>main_application and run ORDERM8_V2.py using python3.
