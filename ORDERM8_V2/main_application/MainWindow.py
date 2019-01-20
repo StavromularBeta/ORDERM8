@@ -51,4 +51,5 @@ class MainWindow(Tk.Frame):
     def display_customerpage(self, customer):
         self.clear_main_window()
         self.CustomerpageWindow.generate_customer_page(customer)
+        self.CustomerpageWindow.update_customer_information(customer)
         self.CustomerpageWindow.grid()
