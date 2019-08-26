@@ -1,7 +1,6 @@
 # ORDERM8
-This is the ORDERM8 project.
 
-ORDERM8 is a lightweight software designed for keeping track of delivery customers. 
+ORDERM8 is a TkInter window to a sqlite database designed to keep track of grocery delivery customers. 
 
 each customer entered into the ORDERM8 database has a customer page, currently containing the following
 - basic information
